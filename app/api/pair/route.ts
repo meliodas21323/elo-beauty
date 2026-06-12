@@ -5,15 +5,16 @@ import path from 'path';
 const MAPPING_FILE = path.join(process.cwd(), 'data', 'cloudinary_mapping.json');
 const JUDGES_DIR = path.join(process.cwd(), 'data', 'judges');
 
-let cachedMapping: Record<string, string> | null = null;
+let cachedMapping: Record<string, string> = {};
 
 function loadMapping(): Record<string, string> {
-  if (cachedMapping) return cachedMapping;
+  if (Object.keys(cachedMapping).length > 0) return cachedMapping;
   try {
     const data = fs.readFileSync(MAPPING_FILE, 'utf-8');
-    cachedMapping = JSON.parse(data);
+    cachedMapping = JSON.parse(data) as Record<string, string>;
     return cachedMapping;
   } catch (error) {
+    console.error("Erreur chargement mapping Cloudinary:", error);
     return {};
   }
 }
