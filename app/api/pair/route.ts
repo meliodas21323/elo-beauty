@@ -5,7 +5,6 @@ import path from 'path';
 const MAPPING_FILE = path.join(process.cwd(), 'data', 'cloudinary_mapping.json');
 const JUDGES_DIR = path.join(process.cwd(), 'data', 'judges');
 
-// ✅ Correction : type explicite, pas de null
 let cachedMapping: Record<string, string> = {};
 
 function loadMapping(): Record<string, string> {
@@ -56,7 +55,7 @@ export async function GET(request: Request) {
 
   const shuffled = candidates.sort(() => 0.5 - Math.random());
   const image1 = shuffled[0];
-  let image2 = shuffled[1];
+  let image2: any = shuffled[1]; // ✅ Correction : type any
 
   if (!image2 || image1.id === image2.id) {
     const others = images.filter(img => img.id !== image1.id);
