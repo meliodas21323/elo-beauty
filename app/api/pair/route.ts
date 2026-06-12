@@ -1,31 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-const MAPPING_FILE = path.join(process.cwd(), 'data', 'cloudinary_mapping.json');
-const JUDGES_DIR = path.join(process.cwd(), 'data', 'judges');
-
-let cachedMapping: Record<string, string> = {};
-
-function loadMapping(): Record<string, string> {
-  if (Object.keys(cachedMapping).length > 0) return cachedMapping;
-  try {
-    const data = fs.readFileSync(MAPPING_FILE, 'utf-8');
-    cachedMapping = JSON.parse(data) as Record<string, string>;
-    return cachedMapping;
-  } catch (error) {
-    console.error("Erreur chargement mapping Cloudinary:", error);
-    return {};
-  }
-}
-
-function loadJudgeData(judgeId: string): any {
-  const filePath = path.join(JUDGES_DIR, `${judgeId}.json`);
-  try {
-    if (fs.existsSync(filePath)) return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  } catch (error) {}
-  return { images: {} };
-}
+import { createServerClient } from '@/lib/supabase';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -35,21 +9,44 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "judgeId manquant" }, { status: 400 });
   }
 
-  const mapping = loadMapping();
-  const judgeData = loadJudgeData(judgeId);
+  const supabase = createServerClient();
 
-  // ✅ On crée directement imagesWithVotes (avec votes)
-  const imagesWithVotes = Object.entries(mapping).map(([filename, url]) => ({
-    id: filename,
-    url: url as string,
-    votes: judgeData.images[filename]?.votes || 0,
-  }));
+  // Récupérer toutes les images
+  const { data: images, error: imagesError } = await supabase
+    .from('images')
+    .select('id, cloudinary_url')
+    .order('id');
 
-  if (imagesWithVotes.length < 2) {
+  if (imagesError || !images || images.length < 2) {
+    console.error("Erreur images:", imagesError);
     return NextResponse.json({ error: "Pas assez d'images" }, { status: 400 });
   }
 
-  // Trier par nombre de votes croissant
+  // Récupérer les scores Elo du juge
+  const { data: scores, error: scoresError } = await supabase
+    .from('elo_scores')
+    .select('image_id, elo, votes')
+    .eq('judge_id', judgeId);
+
+  if (scoresError) {
+    console.error("Erreur scores:", scoresError);
+  }
+
+  // Créer un map des scores
+  const scoresMap = new Map<string, { elo: number; votes: number }>();
+  if (scores) {
+    scores.forEach(s => scoresMap.set(s.image_id, { elo: s.elo, votes: s.votes }));
+  }
+
+  // Ajouter les votes aux images
+  const imagesWithVotes = images.map(img => ({
+    id: img.id,
+    url: img.cloudinary_url,
+    votes: scoresMap.get(img.id)?.votes || 0,
+    elo: scoresMap.get(img.id)?.elo || 1200
+  }));
+
+  // Trier par nombre de votes croissant (les moins votées d'abord)
   imagesWithVotes.sort((a, b) => a.votes - b.votes);
 
   // Prendre les 20% les moins votées
@@ -61,14 +58,14 @@ export async function GET(request: Request) {
   const image1 = shuffled[0];
   let image2 = shuffled[1];
 
-  // ✅ On utilise imagesWithVotes (qui a votes) au lieu de images
+  // Si pas assez de candidates, prendre n'importe quelle autre image
   if (!image2 || image1.id === image2.id) {
     const others = imagesWithVotes.filter(img => img.id !== image1.id);
     image2 = others[Math.floor(Math.random() * others.length)];
   }
 
   return NextResponse.json({
-    left: { id: image1.id, url: image1.url, elo: judgeData.images[image1.id]?.elo || 1200 },
-    right: { id: image2.id, url: image2.url, elo: judgeData.images[image2.id]?.elo || 1200 }
+    left: { id: image1.id, url: image1.url, elo: image1.elo },
+    right: { id: image2.id, url: image2.url, elo: image2.elo }
   });
 }

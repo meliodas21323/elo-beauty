@@ -1,110 +1,136 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { createServerClient } from '@/lib/supabase';
 
-const JUDGES_DIR = path.join(process.cwd(), 'data', 'judges');
+// Facteur K pour le calcul Elo
 const K_FACTOR = 32;
 
-// Créer le dossier judges s'il n'existe pas
-if (!fs.existsSync(JUDGES_DIR)) {
-  fs.mkdirSync(JUDGES_DIR, { recursive: true });
-}
-
-function getJudgeFilePath(judgeId: string) {
-  return path.join(JUDGES_DIR, `${judgeId}.json`);
-}
-
-function loadJudgeData(judgeId: string): any {
-  const filePath = getJudgeFilePath(judgeId);
-  try {
-    if (fs.existsSync(filePath)) {
-      return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    }
-  } catch (error) {
-    console.error("Erreur chargement juge:", error);
-  }
-  return { judgeId, images: {}, total_votes: 0, last_updated: new Date().toISOString() };
-}
-
-function saveJudgeData(judgeId: string, data: any) {
-  data.last_updated = new Date().toISOString();
-  fs.writeFileSync(getJudgeFilePath(judgeId), JSON.stringify(data, null, 2), 'utf-8');
-}
-
+// Calculer la probabilité de victoire
 function expectedScore(ratingA: number, ratingB: number): number {
   return 1 / (1 + Math.pow(10, (ratingB - ratingA) / 400));
 }
 
-function updateEloScores(eloData: any, winnerId: string, loserId: string, isDraw: boolean) {
-  if (!eloData.images[winnerId]) eloData.images[winnerId] = { elo: 1200, votes: 0, wins: 0, losses: 0, draws: 0 };
-  if (!eloData.images[loserId]) eloData.images[loserId] = { elo: 1200, votes: 0, wins: 0, losses: 0, draws: 0 };
-
-  const playerA = eloData.images[winnerId];
-  const playerB = eloData.images[loserId];
-
-  playerA.votes += 1;
-  playerB.votes += 1;
-
-  if (isDraw) {
-    playerA.draws += 1;
-    playerB.draws += 1;
-    const expectedA = expectedScore(playerA.elo, playerB.elo);
-    const expectedB = expectedScore(playerB.elo, playerA.elo);
-    playerA.elo += Math.round(K_FACTOR * (0.5 - expectedA));
-    playerB.elo += Math.round(K_FACTOR * (0.5 - expectedB));
-  } else {
-    playerA.wins += 1;
-    playerB.losses += 1;
-    const expectedA = expectedScore(playerA.elo, playerB.elo);
-    const expectedB = expectedScore(playerB.elo, playerA.elo);
-    playerA.elo += Math.round(K_FACTOR * (1 - expectedA));
-    playerB.elo += Math.round(K_FACTOR * (0 - expectedB));
-  }
-
-  eloData.total_votes += 1;
-  return eloData;
-}
-
-// POST : Enregistrer un vote pour un juge spécifique
-export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-    const { winnerId, loserId, winner, judgeId } = body;
-
-    if (!winnerId || !loserId || !judgeId) {
-      return NextResponse.json({ error: 'Données manquantes' }, { status: 400 });
-    }
-
-    let eloData = loadJudgeData(judgeId);
-    const isDraw = winner === 'draw';
-    eloData = updateEloScores(eloData, winnerId, loserId, isDraw);
-    saveJudgeData(judgeId, eloData);
-
-    return NextResponse.json({ success: true, totalVotes: eloData.total_votes });
-  } catch (error) {
-    console.error("Erreur vote:", error);
-    return NextResponse.json({ error: 'Erreur interne' }, { status: 500 });
-  }
-}
-
-// GET : Récupérer le classement d'un juge spécifique
-export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const judgeId = searchParams.get('judgeId');
-
-  if (!judgeId) {
-    return NextResponse.json({ error: 'judgeId manquant' }, { status: 400 });
-  }
-
-  const eloData = loadJudgeData(judgeId);
+// Calculer les nouveaux scores Elo
+function calculateElo(ratingA: number, ratingB: number, scoreA: number): { newRatingA: number; newRatingB: number } {
+  const expectedA = expectedScore(ratingA, ratingB);
+  const expectedB = 1 - expectedA;
   
-  const allImages = Object.entries(eloData.images)
-    .map(([id, data]: [string, any]) => ({ id, ...data }))
-    .sort((a, b) => b.elo - a.elo);
+  const newRatingA = ratingA + K_FACTOR * (scoreA - expectedA);
+  const newRatingB = ratingB + K_FACTOR * ((1 - scoreA) - expectedB);
+  
+  return { newRatingA: Math.round(newRatingA), newRatingB: Math.round(newRatingB) };
+}
+
+export async function POST(request: Request) {
+  const body = await request.json();
+  const { judgeId, winnerId, loserId } = body;
+
+  if (!judgeId || !winnerId || !loserId) {
+    return NextResponse.json({ error: "Paramètres manquants" }, { status: 400 });
+  }
+
+  const supabase = createServerClient();
+
+  // Récupérer ou créer le juge
+  const { data: judge, error: judgeError } = await supabase
+    .from('judges')
+    .select('id')
+    .eq('id', judgeId)
+    .single();
+
+  if (judgeError && judgeError.code === 'PGRST116') {
+    // Juge n'existe pas, le créer
+    const { data: newJudge, error: createError } = await supabase
+      .from('judges')
+      .insert({ id: judgeId, name: judgeId })
+      .select()
+      .single();
+    
+    if (createError) {
+      console.error("Erreur création juge:", createError);
+      return NextResponse.json({ error: "Erreur création juge" }, { status: 500 });
+    }
+  }
+
+  // Récupérer les scores actuels
+  const { data: winnerScore, error: winnerError } = await supabase
+    .from('elo_scores')
+    .select('elo, votes, wins')
+    .eq('judge_id', judgeId)
+    .eq('image_id', winnerId)
+    .single();
+
+  const { data: loserScore, error: loserError } = await supabase
+    .from('elo_scores')
+    .select('elo, votes, losses')
+    .eq('judge_id', judgeId)
+    .eq('image_id', loserId)
+    .single();
+
+  // Scores par défaut si n'existent pas
+  const currentWinnerElo = winnerScore?.elo || 1200;
+  const currentLoserElo = loserScore?.elo || 1200;
+  const currentWinnerVotes = winnerScore?.votes || 0;
+  const currentLoserVotes = loserScore?.votes || 0;
+  const currentWinnerWins = winnerScore?.wins || 0;
+  const currentLoserLosses = loserScore?.losses || 0;
+
+  // Calculer les nouveaux scores
+  const { newRatingA: newWinnerElo, newRatingB: newLoserElo } = calculateElo(
+    currentWinnerElo,
+    currentLoserElo,
+    1 // winner a gagné
+  );
+
+  // Mettre à jour ou créer les scores
+  if (winnerScore) {
+    await supabase
+      .from('elo_scores')
+      .update({
+        elo: newWinnerElo,
+        votes: currentWinnerVotes + 1,
+        wins: currentWinnerWins + 1,
+        updated_at: new Date().toISOString()
+      })
+      .eq('judge_id', judgeId)
+      .eq('image_id', winnerId);
+  } else {
+    await supabase
+      .from('elo_scores')
+      .insert({
+        judge_id: judgeId,
+        image_id: winnerId,
+        elo: newWinnerElo,
+        votes: 1,
+        wins: 1
+      });
+  }
+
+  if (loserScore) {
+    await supabase
+      .from('elo_scores')
+      .update({
+        elo: newLoserElo,
+        votes: currentLoserVotes + 1,
+        losses: currentLoserLosses + 1,
+        updated_at: new Date().toISOString()
+      })
+      .eq('judge_id', judgeId)
+      .eq('image_id', loserId);
+  } else {
+    await supabase
+      .from('elo_scores')
+      .insert({
+        judge_id: judgeId,
+        image_id: loserId,
+        elo: newLoserElo,
+        votes: 1,
+        losses: 1
+      });
+  }
 
   return NextResponse.json({
-    totalVotes: eloData.total_votes,
-    totalImages: Object.keys(eloData.images).length,
-    images: allImages
+    success: true,
+    newWinnerElo,
+    newLoserElo
   });
 }
