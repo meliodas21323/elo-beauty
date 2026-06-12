@@ -36,29 +36,34 @@ export async function GET(request: Request) {
   }
 
   const mapping = loadMapping();
-  const images = Object.entries(mapping).map(([filename, url]) => ({ id: filename, url }));
   const judgeData = loadJudgeData(judgeId);
 
-  if (images.length < 2) {
+  // ✅ On crée directement imagesWithVotes (avec votes)
+  const imagesWithVotes = Object.entries(mapping).map(([filename, url]) => ({
+    id: filename,
+    url: url as string,
+    votes: judgeData.images[filename]?.votes || 0,
+  }));
+
+  if (imagesWithVotes.length < 2) {
     return NextResponse.json({ error: "Pas assez d'images" }, { status: 400 });
   }
 
-  const imagesWithVotes = images.map(img => ({
-    ...img,
-    votes: judgeData.images[img.id]?.votes || 0,
-  }));
-
+  // Trier par nombre de votes croissant
   imagesWithVotes.sort((a, b) => a.votes - b.votes);
 
+  // Prendre les 20% les moins votées
   const topCount = Math.max(2, Math.floor(imagesWithVotes.length * 0.2));
   const candidates = imagesWithVotes.slice(0, topCount);
 
+  // Choisir 2 au hasard
   const shuffled = candidates.sort(() => 0.5 - Math.random());
-    const image1 = shuffled[0];
-  let image2: any = shuffled[1]; // ✅ Correction : type any
+  const image1 = shuffled[0];
+  let image2 = shuffled[1];
 
+  // ✅ On utilise imagesWithVotes (qui a votes) au lieu de images
   if (!image2 || image1.id === image2.id) {
-    const others = images.filter(img => img.id !== image1.id);
+    const others = imagesWithVotes.filter(img => img.id !== image1.id);
     image2 = others[Math.floor(Math.random() * others.length)];
   }
 
