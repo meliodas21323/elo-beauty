@@ -5,6 +5,7 @@ import path from 'path';
 const MAPPING_FILE = path.join(process.cwd(), 'data', 'cloudinary_mapping.json');
 const JUDGES_DIR = path.join(process.cwd(), 'data', 'judges');
 
+// ✅ Correction : type explicite, pas de null
 let cachedMapping: Record<string, string> = {};
 
 function loadMapping(): Record<string, string> {
@@ -43,7 +44,6 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Pas assez d'images" }, { status: 400 });
   }
 
-  // Trier pour privilégier les images que CE juge a le moins vues
   const imagesWithVotes = images.map(img => ({
     ...img,
     votes: judgeData.images[img.id]?.votes || 0,
@@ -51,7 +51,6 @@ export async function GET(request: Request) {
 
   imagesWithVotes.sort((a, b) => a.votes - b.votes);
 
-  // Prendre les 20% les moins votées par ce juge
   const topCount = Math.max(2, Math.floor(imagesWithVotes.length * 0.2));
   const candidates = imagesWithVotes.slice(0, topCount);
 
