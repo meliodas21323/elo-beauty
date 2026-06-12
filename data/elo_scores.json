@@ -1,0 +1,10128 @@
+{
+  "last_updated": "2026-06-12T10:54:09.904Z",
+  "total_votes": 1294,
+  "images": {
+    "000149.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000258.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000059.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000161.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000113.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000278.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000154.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000140.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000076.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000163.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000200.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000119.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000071.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000053.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000210.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000176.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000121.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000257.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000023.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000275.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000107.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000202.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000267.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000102.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000164.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000146.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000265.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000175.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000019.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000132.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000280.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000305.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000291.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000162.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000008_1.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000120.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000268.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000173.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000167.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000055.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000001_1.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000300.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000222.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000029.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000263.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000054.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000130.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000056.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000292.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000045.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000036.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000254.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000078.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000333.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000031.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000073.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000233.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000199.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000051.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000037.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000195.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000124.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000141.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000174.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000287.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000016.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000048.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000337.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000093.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000182.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000101.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000041.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000188.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000106.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000301.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000069.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000255.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000057.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000022.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000027.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000081.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000352.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000194.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000204.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000354.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000245.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000158.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000237.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000105.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000264.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000066.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000108.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000364.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000064.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000229.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000111.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000242.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000247.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000236.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000166.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000206.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000272.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000009_1.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000313.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000060.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000201.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000375.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000259.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000383.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000186.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000316.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000082.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000331.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000026.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000256.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000085.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000011.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000397.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000125.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000399.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000095.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000185.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000127.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000319.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000366.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000123.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000240.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000094.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000327.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000244.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000209.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000380.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000003_1.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000381.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000072.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000192.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000215.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000359.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000152.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000379.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000024.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000410.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000250.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000028.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000315.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000118.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000339.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000425.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000374.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000139.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000393.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000050.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000144.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000217.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000248.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000402.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000172.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000284.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000115.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000325.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000013.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000212.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000002_1.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000135.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000427.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000075.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000234.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000007_1.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000148.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000414.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000079.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000378.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000302.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000249.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000145.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000368.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000129.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000456.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000262.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000441.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000445.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000377.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000150.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000014.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000241.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000228.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000390.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000193.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000156.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000448.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000227.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000091.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000128.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000134.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000457.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000171.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000412.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000230.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000358.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000058.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000470.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000004_1.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000052.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000122.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000083.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000463.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000235.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000459.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000469.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000428.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000468.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000298.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000450.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000353.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000232.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000372.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000020.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000500.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000329.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000438.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000157.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000408.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000475.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000304.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000239.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000483.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000012.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000499.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000090.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000405.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000042.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000387.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000226.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000303.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000406.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000398.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000309.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000221.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000350.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000038.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000084.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000434.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000035.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000196.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000351.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000104.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000462.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000290.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000357.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000271.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000289.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000030.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000536.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000005_1.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000454.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000521.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000384.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000063.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000446.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000508.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000153.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000293.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000321.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000032.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000218.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000116.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000191.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000341.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000543.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000216.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000010_1.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000554.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000547.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000198.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000310.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000332.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000133.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000386.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000347.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000519.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000252.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000261.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000349.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000567.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000086.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000394.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000373.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000516.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000524.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000183.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000021.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000114.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000396.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000416.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000323.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000530.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000433.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000550.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000034.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000517.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000080.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000461.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000452.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000429.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000417.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000326.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000376.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000411.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000493.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000400.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000418.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000136.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000151.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000033.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000431.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000138.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000525.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000477.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000065.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000320.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000481.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000488.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000238.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000187.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000355.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000330.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000385.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000382.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000534.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000348.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000269.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000444.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000296.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000580.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000443.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000043.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000613.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000006_1.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000279.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000571.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000401.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000559.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000025.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000549.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000220.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000371.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000464.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000277.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000555.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000614.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000190.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000611.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000177.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000616.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000590.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000276.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000110.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000631.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000589.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000260.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000592.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000219.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000527.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000015.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000363.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000281.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000074.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000505.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000211.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000600.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000451.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000636.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000404.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000049.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000587.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000562.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000070.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000017.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000577.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000044.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000342.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000295.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000537.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000046.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000466.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000472.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000039.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000566.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000591.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000609.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000509.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000340.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000307.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000047.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000604.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000061.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000675.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000510.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000487.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000661.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000680.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000528.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000585.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000328.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000103.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000460.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000253.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000512.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000369.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000178.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000168.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000690.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000629.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000423.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000018.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000593.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000392.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000684.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000513.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000214.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000652.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000040.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000575.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000344.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000224.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000494.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000432.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000491.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000420.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000598.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000683.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000526.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000288.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000489.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000608.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000137.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000308.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000251.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000644.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000097.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000322.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000541.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000317.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000558.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000573.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000334.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000664.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000324.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000668.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000552.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000546.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000246.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000426.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000440.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000361.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000486.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000413.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000181.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000588.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000430.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000734.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000511.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000311.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000578.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000243.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000658.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000703.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000096.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000087.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000708.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000471.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000455.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000099.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000117.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000682.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000597.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000663.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000622.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000362.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000497.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000719.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000657.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000282.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000770.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000561.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000147.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000681.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000595.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000676.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000586.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000564.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000771.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000306.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000318.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000612.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000067.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000762.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000112.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000723.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000312.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000705.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000131.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000743.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000100.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000628.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000724.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000180.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000737.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000643.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000391.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000710.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000738.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000778.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000570.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000207.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000665.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000666.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000689.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000745.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000692.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000783.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000294.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000693.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000809.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000688.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000793.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000700.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000297.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000484.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000794.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000642.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000639.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000815.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000062.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000213.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000795.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000208.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000806.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000165.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000502.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000717.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000565.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000422.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000266.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000388.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000338.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000535.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000761.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000687.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000792.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000395.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000501.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000584.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000727.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000447.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000818.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000816.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000610.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000827.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000533.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000453.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000777.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000728.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000772.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000360.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000774.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000370.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000650.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000160.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000835.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000749.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000671.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000088.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000824.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000825.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000632.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000706.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000791.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000852.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000744.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000776.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000834.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000673.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000720.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000813.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000669.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000786.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000479.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000804.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000560.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000285.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000764.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000854.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000755.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000725.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000389.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000694.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000336.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000715.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000548.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000576.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000515.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000839.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000231.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000711.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000556.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000733.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000634.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000627.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000606.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000817.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000437.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000465.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000126.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000833.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000660.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000544.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000752.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000467.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000697.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000906.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000645.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000903.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000769.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000197.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000098.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000899.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000345.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000842.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000572.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000893.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000506.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000736.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000887.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000844.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000648.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000656.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000837.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000735.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000492.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000779.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000649.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000314.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000726.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000811.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000583.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000625.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000540.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000891.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000740.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000225.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000882.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000805.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000904.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000653.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000759.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000859.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000935.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000367.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000142.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000775.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000739.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000829.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000907.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000884.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000223.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000365.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000790.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000409.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000946.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000917.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000605.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000788.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000603.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000068.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000751.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000679.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000921.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000143.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000766.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000698.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000849.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000785.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000283.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000943.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000617.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000914.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000637.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000901.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000796.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000712.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000442.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000702.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000672.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000722.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000274.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000635.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000686.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000773.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000915.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000553.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000964.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000495.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000865.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000768.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000205.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000601.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000902.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000862.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000633.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000599.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000826.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000855.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000407.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000651.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000784.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000721.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000756.png": {
+      "elo": 1188,
+      "votes": 3,
+      "wins": 1,
+      "losses": 2,
+      "draws": 0
+    },
+    "000856.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000659.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000942.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000853.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000934.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000821.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000861.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000716.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000881.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000490.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000626.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000886.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000758.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000963.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000798.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000542.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000803.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000940.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000545.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001001.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000808.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000952.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000828.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000947.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000870.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000953.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000179.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000992.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000286.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000621.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000986.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000929.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000569.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000760.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000800.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000568.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000812.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000875.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000563.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000624.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000994.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000415.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000970.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000691.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000476.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000797.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000920.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000169.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000900.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000707.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001042.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000880.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000951.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001015.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000551.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001033.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000729.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001034.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000155.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000532.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000910.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000989.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000848.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000830.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001071.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000912.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000867.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000203.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000993.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000574.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000623.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000969.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000845.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001049.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000718.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000801.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000892.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000498.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000810.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001048.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000919.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000936.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000618.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000895.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001044.png": {
+      "elo": 1198,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000714.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000403.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001012.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000713.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000732.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000685.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000270.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000780.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000299.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001019.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000945.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000449.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001022.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000474.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000938.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000889.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000819.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001088.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000704.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000630.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000799.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000975.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000538.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001085.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000753.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000557.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000981.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000077.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001070.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001098.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000789.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000619.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001079.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000857.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000976.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000984.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001087.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000916.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000995.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000159.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000905.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000419.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000885.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000958.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001040.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000847.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001122.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001028.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000514.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000335.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001060.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001050.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000961.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001142.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001057.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000898.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000897.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000696.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001064.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000851.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001147.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001103.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000883.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000646.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000670.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001051.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001036.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000807.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000667.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000871.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001073.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000615.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000458.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000983.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001156.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001141.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001062.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000949.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001132.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000959.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000640.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000872.png": {
+      "elo": 1212,
+      "votes": 3,
+      "wins": 2,
+      "losses": 1,
+      "draws": 0
+    },
+    "000931.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001128.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000956.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001105.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000858.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000873.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001157.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000674.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000999.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000896.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001006.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000662.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001025.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001063.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000581.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000607.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001137.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000924.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001124.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001066.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001123.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000863.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000741.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000746.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001186.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001018.png": {
+      "elo": 1198,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001198.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001037.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001004.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001096.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001059.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000647.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000960.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000991.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000879.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000877.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000596.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001065.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000988.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000654.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001056.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000089.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001112.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001149.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000987.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001068.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000507.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001026.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000504.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001140.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000496.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000860.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000831.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000941.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000273.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001227.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000485.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001187.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000520.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001179.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001114.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000750.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001133.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000594.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000998.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000996.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000932.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001104.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001035.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001220.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001131.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001154.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001043.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001168.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000930.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001222.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000928.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001204.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001058.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000730.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001167.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001243.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000641.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000184.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000814.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000850.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001029.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000909.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001077.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001080.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001125.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001152.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000967.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001188.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000968.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000966.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000478.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001100.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000939.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001218.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000971.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001082.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001159.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001148.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000926.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001257.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000832.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001253.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000913.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001255.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000836.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001074.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001229.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001046.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000523.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001246.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000802.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001267.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000955.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000189.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000356.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001199.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001206.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000579.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001118.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001121.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001023.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001091.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000787.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001172.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000346.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001274.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001230.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000767.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000522.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000864.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001192.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001052.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000950.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001245.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000529.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001097.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001151.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001294.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001081.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001202.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000990.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000982.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001320.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001120.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000092.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000869.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001210.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001288.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000754.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001090.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001329.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001269.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001226.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000890.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001330.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000957.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000965.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001170.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001177.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000709.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001169.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001304.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001038.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001219.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000918.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001055.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001165.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001178.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000170.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000678.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000439.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001284.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000866.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001224.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001083.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001258.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001174.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001298.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001263.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001295.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001237.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001247.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001095.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001328.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000843.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001256.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001110.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001017.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001045.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000582.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001203.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001197.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000838.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001270.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001111.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001338.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001139.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001016.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001360.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001240.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001061.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001020.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000927.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001158.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001301.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001144.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001182.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001175.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001361.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001259.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001310.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000695.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001130.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001107.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000888.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000638.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000343.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001299.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000503.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001376.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001078.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000480.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000436.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001380.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000655.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001291.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000518.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001135.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001008.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001293.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001391.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001093.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001196.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000937.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001399.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001315.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001356.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000925.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001409.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001072.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001297.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001266.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001207.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001115.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001136.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001417.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001205.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001216.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001030.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001195.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001292.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001307.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001268.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001277.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001343.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001412.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000933.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001262.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001236.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001357.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001419.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001113.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001138.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001265.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001084.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000757.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000699.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001404.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000731.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001160.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001076.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001354.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001446.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000985.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000602.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001223.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001209.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001106.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000765.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000435.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001397.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000782.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001436.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001377.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001116.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001146.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000620.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001290.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001275.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001394.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001341.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001161.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001302.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001013.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001278.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001407.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001214.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001403.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001353.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001251.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001389.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001129.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001427.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001155.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001395.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001340.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001176.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001375.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001145.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001430.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001134.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001384.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001421.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000677.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001406.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000421.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001003.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001385.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000424.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001382.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001388.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001166.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001109.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001254.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001005.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001325.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000531.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001239.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001238.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001444.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001171.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001282.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001117.png": {
+      "elo": 1198,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000701.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001000.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001334.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000539.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001027.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001433.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000954.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001303.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001164.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001342.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001086.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001194.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001415.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001306.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001143.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001272.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000109.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001191.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001425.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001153.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001309.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000977.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001363.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001402.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001414.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001424.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001041.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000781.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001369.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001208.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001279.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001232.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001221.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001441.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001400.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001445.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001323.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000748.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001053.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001280.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001410.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000978.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001009.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001366.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001039.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001350.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001252.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001390.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001201.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000911.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000894.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000747.png": {
+      "elo": 1233,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001355.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001381.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001241.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001242.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001007.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001373.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001439.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001283.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000473.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001440.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001249.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001347.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001092.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001163.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001102.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001431.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000846.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001248.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001244.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000908.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001362.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001285.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001344.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001183.png": {
+      "elo": 1198,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001296.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001337.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001413.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001393.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001276.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001416.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001108.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000840.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001235.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001021.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001333.png": {
+      "elo": 1202,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001264.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001392.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000823.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001326.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001189.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001378.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001405.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001434.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001054.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001368.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001339.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000482.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001426.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000742.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001031.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000974.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001349.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001408.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001401.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000923.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001287.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000763.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001351.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000874.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001327.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000944.png": {
+      "elo": 1167,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001317.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000868.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000980.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001032.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000997.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001273.png": {
+      "elo": 1200,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "000878.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000820.png": {
+      "elo": 1167,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001213.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000876.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001069.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001184.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001418.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001383.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001321.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001127.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001346.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001260.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001067.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000822.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000841.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "000948.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001365.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001358.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001225.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000979.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001429.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001200.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001432.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001372.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001352.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001101.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "000922.png": {
+      "elo": 1198,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001126.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001212.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001438.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001308.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001437.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001150.png": {
+      "elo": 1168,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001371.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001345.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001428.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001423.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001010.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001234.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001316.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001386.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001217.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001162.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001332.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001312.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001322.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001002.png": {
+      "elo": 1202,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001024.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001305.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000962.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001442.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001364.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001014.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001319.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001435.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001286.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001193.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001094.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001379.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001271.png": {
+      "elo": 1216,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001387.png": {
+      "elo": 1184,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "000973.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "000972.png": {
+      "elo": 1167,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001289.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001173.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001370.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001422.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001180.png": {
+      "elo": 1167,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001250.png": {
+      "elo": 1233,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001314.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001411.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001367.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001089.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001281.png": {
+      "elo": 1232,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001099.png": {
+      "elo": 1230,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001215.png": {
+      "elo": 1199,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001398.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001075.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001300.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001011.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001324.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001190.png": {
+      "elo": 1202,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001047.png": {
+      "elo": 1170,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001181.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001231.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001228.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001420.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001374.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001335.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001359.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001311.png": {
+      "elo": 1185,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001396.png": {
+      "elo": 1215,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001331.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001185.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    },
+    "001119.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001233.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001211.png": {
+      "elo": 1231,
+      "votes": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0
+    },
+    "001318.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001261.png": {
+      "elo": 1167,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001313.png": {
+      "elo": 1169,
+      "votes": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0
+    },
+    "001443.png": {
+      "elo": 1217,
+      "votes": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0
+    },
+    "001336.png": {
+      "elo": 1183,
+      "votes": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0
+    },
+    "001348.png": {
+      "elo": 1201,
+      "votes": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0
+    }
+  }
+}
