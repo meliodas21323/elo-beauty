@@ -54,7 +54,7 @@ export async function GET(request: Request) {
   const candidates = imagesWithVotes.slice(0, topCount);
 
   const shuffled = candidates.sort(() => 0.5 - Math.random());
-  const image1 = shuffled[0];
+    const image1 = shuffled[0];
   let image2: any = shuffled[1]; // ✅ Correction : type any
 
   if (!image2 || image1.id === image2.id) {
