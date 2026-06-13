@@ -56,7 +56,7 @@ export default function ClassementPage() {
         <div className="flex justify-between items-center">
           <SideMenu judgeName={judgeName || ''} />
           <h1 className="text-xl font-bold text-pink-500">Classement</h1>
-          <div className="w-10"></div>
+          <div className="w-12"></div>
         </div>
       </header>
 
@@ -90,17 +90,17 @@ export default function ClassementPage() {
         )}
       </main>
 
-      {/* Barre de navigation en bas */}
+      {/* Barre de navigation en bas - boutons plus gros */}
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button
             onClick={() => router.push('/vote')}
-            className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
+            className="p-4 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors text-base"
           >
             Voter
           </button>
           <button
-            className="p-3 bg-zinc-700 text-white font-medium rounded-lg"
+            className="p-4 bg-zinc-700 text-white font-medium rounded-lg text-base"
           >
             Classement
           </button>

@@ -75,28 +75,28 @@ export default function VotePage() {
         <div className="flex justify-between items-center">
           <SideMenu judgeName={judgeName || ''} />
           <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
-          <div className="w-10"></div>
+          <div className="w-12"></div>
         </div>
       </header>
 
-      {/* Zone de vote - prend tout l'espace restant */}
-      <main className="flex-1 p-3 overflow-hidden">
+      {/* Zone de vote - images en format original */}
+      <main className="flex-1 p-3 overflow-y-auto">
         {error && (
           <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
             {error}
           </div>
         )}
 
-        <div className="grid grid-cols-2 gap-3 h-full">
+        <div className="grid grid-cols-2 gap-3">
           {leftImage && (
             <button
               onClick={() => handleVote(leftImage.id, rightImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 h-full"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900"
             >
               <img
                 src={leftImage.url}
                 alt="Image gauche"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
                 Elo: {leftImage.elo}
@@ -107,12 +107,12 @@ export default function VotePage() {
           {rightImage && (
             <button
               onClick={() => handleVote(rightImage.id, leftImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 h-full"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900"
             >
               <img
                 src={rightImage.url}
                 alt="Image droite"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
                 Elo: {rightImage.elo}
@@ -122,17 +122,17 @@ export default function VotePage() {
         </div>
       </main>
 
-      {/* Barre de navigation en bas */}
+      {/* Barre de navigation en bas - boutons plus gros */}
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button
             onClick={() => router.push('/classement')}
-            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
+            className="p-4 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors text-base"
           >
             Classement
           </button>
           <button
-            className="p-3 bg-pink-700 text-white font-bold rounded-lg"
+            className="p-4 bg-pink-700 text-white font-bold rounded-lg text-base"
           >
             Voter
           </button>
