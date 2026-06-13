@@ -74,10 +74,10 @@ export default function VotePage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
-      {/* En-tête FIXE avec navigation */}
-      <header className="sticky top-0 z-10 bg-black border-b border-zinc-800">
-        <div className="p-4 flex justify-between items-center">
+    <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)]">
+      {/* Header FIXE en haut */}
+      <header className="sticky top-0 z-10 bg-black border-b border-zinc-800 p-4">
+        <div className="flex justify-between items-center">
           <div>
             <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
             <p className="text-xs text-zinc-400">Juge : {judgeName}</p>
@@ -89,26 +89,10 @@ export default function VotePage() {
             Déconnexion
           </button>
         </div>
-        
-        {/* Navigation FIXE - Toujours visible */}
-        <div className="p-4 pt-0 grid grid-cols-2 gap-3">
-          <button 
-            onClick={() => router.push('/classement')}
-            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
-          >
-            Classement
-          </button>
-          <button 
-            onClick={() => router.push('/vote')}
-            className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
-          >
-            Voter
-          </button>
-        </div>
       </header>
 
-      {/* Zone de vote scrollable */}
-      <main className="flex-1 p-4 overflow-y-auto">
+      {/* Zone de vote scrollable avec padding en bas */}
+      <main className="flex-1 p-4 overflow-y-auto pb-24">
         {error && (
           <div className="mb-4 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
             {error}
@@ -150,6 +134,23 @@ export default function VotePage() {
           )}
         </div>
       </main>
+
+      {/* Barre de navigation FIXE en bas */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-zinc-800 p-4 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
+        <div className="grid grid-cols-2 gap-3">
+          <button 
+            onClick={() => router.push('/classement')}
+            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
+          >
+            Classement
+          </button>
+          <button 
+            className="p-3 bg-pink-700 text-white font-bold rounded-lg"
+          >
+            Voter
+          </button>
+        </div>
+      </nav>
     </div>
   );
 }
