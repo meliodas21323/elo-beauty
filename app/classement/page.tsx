@@ -10,7 +10,6 @@ export default function ClassementPage() {
   const [ranking, setRanking] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Vérifier la connexion
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
     const name = localStorage.getItem('judgeName');
@@ -22,7 +21,6 @@ export default function ClassementPage() {
     }
   }, [router]);
 
-  // Charger le classement
   useEffect(() => {
     if (!judgeId) return;
     
@@ -72,7 +70,7 @@ export default function ClassementPage() {
         </button>
       </header>
 
-      {/* Liste du classement */}
+      {/* Liste du classement - Adapté mobile */}
       <main className="flex-1 p-4 overflow-y-auto">
         {ranking.length === 0 ? (
           <div className="text-center text-zinc-400 mt-10">
@@ -82,16 +80,16 @@ export default function ClassementPage() {
           <div className="space-y-3">
             {ranking.map((item, index) => (
               <div key={item.id} className="flex items-center bg-zinc-900 p-3 rounded-xl border border-zinc-800">
-                <div className="text-2xl font-bold text-zinc-500 w-8">
-                  {index + 1}
+                <div className="text-2xl font-bold text-zinc-500 w-10 text-center">
+                  #{index + 1}
                 </div>
                 <img 
                   src={item.url} 
                   alt={`Rank ${index + 1}`} 
-                  className="w-16 h-16 object-cover rounded-lg mr-4"
+                  className="w-14 h-14 object-cover rounded-lg mx-3 flex-shrink-0"
                 />
-                <div className="flex-1">
-                  <div className="text-lg font-bold text-white">Elo: {item.elo}</div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-base font-bold text-white">Elo: {item.elo}</div>
                   <div className="text-xs text-zinc-400">
                     {item.votes} votes ({item.wins}V - {item.losses}D)
                   </div>
@@ -102,14 +100,22 @@ export default function ClassementPage() {
         )}
       </main>
 
-      {/* Bouton pour retourner voter (CORRIGÉ) */}
+      {/* Navigation */}
       <footer className="p-4 border-t border-zinc-800">
-        <button 
-          onClick={() => router.push('/vote')}
-          className="w-full p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
-        >
-          Continuer à voter
-        </button>
+        <div className="grid grid-cols-2 gap-3">
+          <button 
+            onClick={() => router.push('/vote')}
+            className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
+          >
+            Voter
+          </button>
+          <button 
+            onClick={() => router.push('/classement')}
+            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
+          >
+            Classement
+          </button>
+        </div>
       </footer>
     </div>
   );

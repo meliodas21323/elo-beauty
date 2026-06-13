@@ -12,7 +12,6 @@ export default function VotePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  // Vérifier la connexion au chargement
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
     const name = localStorage.getItem('judgeName');
@@ -54,7 +53,7 @@ export default function VotePage() {
         body: JSON.stringify({ judgeId, winnerId, loserId }),
       });
       if (!res.ok) throw new Error('Erreur de vote');
-      fetchPair(); // Charger la paire suivante
+      fetchPair();
     } catch (err) {
       setError('Erreur lors du vote');
     }
@@ -66,7 +65,6 @@ export default function VotePage() {
     router.push('/');
   };
 
-  // Tant qu'on vérifie la connexion ou qu'on charge les images
   if (!judgeId || loading) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center pt-[env(safe-area-inset-top)]">
@@ -77,7 +75,7 @@ export default function VotePage() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
-      {/* En-tête avec déconnexion */}
+      {/* En-tête */}
       <header className="p-4 flex justify-between items-center border-b border-zinc-800">
         <div>
           <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
@@ -99,14 +97,19 @@ export default function VotePage() {
           </div>
         )}
 
-        <div className="grid grid-cols-2 gap-4 flex-1">
+        {/* Images - Adapté mobile */}
+        <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
           {leftImage && (
             <button 
               onClick={() => handleVote(leftImage.id, rightImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 h-full"
             >
-              <img src={leftImage.url} alt="Image gauche" className="w-full h-full object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-2 text-center text-xs">
+              <img 
+                src={leftImage.url} 
+                alt="Image gauche" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
                 Elo: {leftImage.elo}
               </div>
             </button>
@@ -115,10 +118,14 @@ export default function VotePage() {
           {rightImage && (
             <button 
               onClick={() => handleVote(rightImage.id, leftImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 h-full"
             >
-              <img src={rightImage.url} alt="Image droite" className="w-full h-full object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-2 text-center text-xs">
+              <img 
+                src={rightImage.url} 
+                alt="Image droite" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
                 Elo: {rightImage.elo}
               </div>
             </button>
@@ -126,11 +133,22 @@ export default function VotePage() {
         </div>
       </main>
 
-      {/* Navigation vers le classement */}
-      <footer className="p-4 border-t border-zinc-800 text-center">
-        <a href="/classement" className="text-pink-500 hover:text-pink-400 font-medium">
-          Voir le classement 
-        </a>
+      {/* Navigation */}
+      <footer className="p-4 border-t border-zinc-800">
+        <div className="grid grid-cols-2 gap-3">
+          <button 
+            onClick={() => router.push('/classement')}
+            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
+          >
+            Voir classement
+          </button>
+          <button 
+            onClick={() => router.push('/vote')}
+            className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
+          >
+            Voter
+          </button>
+        </div>
       </footer>
     </div>
   );
