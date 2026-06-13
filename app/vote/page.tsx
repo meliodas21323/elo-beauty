@@ -62,16 +62,16 @@ export default function VotePage() {
 
   if (!judgeId || loading) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center pt-[env(safe-area-inset-top)]">
+      <div className="h-dvh bg-black flex items-center justify-center">
         <div className="w-12 h-12 border-4 border-pink-500 border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)]">
-      {/* Header avec menu hamburger */}
-      <header className="sticky top-0 z-10 bg-black border-b border-zinc-800 p-4">
+    <div className="h-dvh bg-black text-white flex flex-col overflow-hidden">
+      {/* Header */}
+      <header className="flex-shrink-0 bg-black border-b border-zinc-800 px-4 py-3" style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}>
         <div className="flex justify-between items-center">
           <SideMenu judgeName={judgeName || ''} />
           <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
@@ -79,15 +79,15 @@ export default function VotePage() {
         </div>
       </header>
 
-      {/* Zone de vote */}
-      <main className="flex-1 p-4 overflow-y-auto pb-24">
+      {/* Zone de vote - prend tout l'espace restant */}
+      <main className="flex-1 p-3 overflow-hidden">
         {error && (
-          <div className="mb-4 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
+          <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
             {error}
           </div>
         )}
 
-        <div className="grid grid-cols-2 gap-3" style={{ minHeight: 'calc(100vh - 250px)' }}>
+        <div className="grid grid-cols-2 gap-3 h-full">
           {leftImage && (
             <button
               onClick={() => handleVote(leftImage.id, rightImage.id)}
@@ -123,7 +123,7 @@ export default function VotePage() {
       </main>
 
       {/* Barre de navigation en bas */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-zinc-800 p-4 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
+      <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button
             onClick={() => router.push('/classement')}

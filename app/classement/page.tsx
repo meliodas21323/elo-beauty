@@ -43,16 +43,16 @@ export default function ClassementPage() {
 
   if (!judgeId || loading) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center pt-[env(safe-area-inset-top)]">
+      <div className="h-dvh bg-black flex items-center justify-center">
         <div className="w-12 h-12 border-4 border-pink-500 border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)]">
-      {/* Header avec menu hamburger */}
-      <header className="sticky top-0 z-10 bg-black border-b border-zinc-800 p-4">
+    <div className="h-dvh bg-black text-white flex flex-col overflow-hidden">
+      {/* Header */}
+      <header className="flex-shrink-0 bg-black border-b border-zinc-800 px-4 py-3" style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}>
         <div className="flex justify-between items-center">
           <SideMenu judgeName={judgeName || ''} />
           <h1 className="text-xl font-bold text-pink-500">Classement</h1>
@@ -61,7 +61,7 @@ export default function ClassementPage() {
       </header>
 
       {/* Liste scrollable */}
-      <main className="flex-1 p-4 overflow-y-auto pb-24">
+      <main className="flex-1 overflow-y-auto px-4 py-3">
         {ranking.length === 0 ? (
           <div className="text-center text-zinc-400 mt-10">
             <p>Aucun vote enregistré pour le moment.</p>
@@ -91,7 +91,7 @@ export default function ClassementPage() {
       </main>
 
       {/* Barre de navigation en bas */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-zinc-800 p-4 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
+      <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button
             onClick={() => router.push('/vote')}
