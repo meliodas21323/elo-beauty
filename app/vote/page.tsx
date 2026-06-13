@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import SideMenu from '@/components/SideMenu';
 
 export default function VotePage() {
   const router = useRouter();
@@ -59,12 +60,6 @@ export default function VotePage() {
     }
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('judgeId');
-    localStorage.removeItem('judgeName');
-    router.push('/');
-  };
-
   if (!judgeId || loading) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center pt-[env(safe-area-inset-top)]">
@@ -75,23 +70,16 @@ export default function VotePage() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)]">
-      {/* Header FIXE en haut */}
+      {/* Header avec menu hamburger */}
       <header className="sticky top-0 z-10 bg-black border-b border-zinc-800 p-4">
         <div className="flex justify-between items-center">
-          <div>
-            <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
-            <p className="text-xs text-zinc-400">Juge : {judgeName}</p>
-          </div>
-          <button 
-            onClick={handleLogout}
-            className="px-3 py-1 text-sm bg-zinc-800 hover:bg-zinc-700 rounded-lg text-zinc-300"
-          >
-            Déconnexion
-          </button>
+          <SideMenu judgeName={judgeName || ''} />
+          <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
+          <div className="w-10"></div>
         </div>
       </header>
 
-      {/* Zone de vote scrollable avec padding en bas */}
+      {/* Zone de vote */}
       <main className="flex-1 p-4 overflow-y-auto pb-24">
         {error && (
           <div className="mb-4 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
@@ -99,16 +87,15 @@ export default function VotePage() {
           </div>
         )}
 
-        {/* Images */}
         <div className="grid grid-cols-2 gap-3" style={{ minHeight: 'calc(100vh - 250px)' }}>
           {leftImage && (
-            <button 
+            <button
               onClick={() => handleVote(leftImage.id, rightImage.id)}
               className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 h-full"
             >
-              <img 
-                src={leftImage.url} 
-                alt="Image gauche" 
+              <img
+                src={leftImage.url}
+                alt="Image gauche"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
@@ -116,15 +103,15 @@ export default function VotePage() {
               </div>
             </button>
           )}
-          
+
           {rightImage && (
-            <button 
+            <button
               onClick={() => handleVote(rightImage.id, leftImage.id)}
               className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 h-full"
             >
-              <img 
-                src={rightImage.url} 
-                alt="Image droite" 
+              <img
+                src={rightImage.url}
+                alt="Image droite"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
@@ -135,16 +122,16 @@ export default function VotePage() {
         </div>
       </main>
 
-      {/* Barre de navigation FIXE en bas */}
+      {/* Barre de navigation en bas */}
       <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-zinc-800 p-4 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
         <div className="grid grid-cols-2 gap-3">
-          <button 
+          <button
             onClick={() => router.push('/classement')}
             className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
           >
             Classement
           </button>
-          <button 
+          <button
             className="p-3 bg-pink-700 text-white font-bold rounded-lg"
           >
             Voter

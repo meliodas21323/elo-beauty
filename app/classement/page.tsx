@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import SideMenu from '@/components/SideMenu';
 
 export default function ClassementPage() {
   const router = useRouter();
@@ -23,7 +24,7 @@ export default function ClassementPage() {
 
   useEffect(() => {
     if (!judgeId) return;
-    
+
     const fetchRanking = async () => {
       try {
         const res = await fetch(`/api/ranking?judgeId=${judgeId}`);
@@ -40,12 +41,6 @@ export default function ClassementPage() {
     fetchRanking();
   }, [judgeId]);
 
-  const handleLogout = () => {
-    localStorage.removeItem('judgeId');
-    localStorage.removeItem('judgeName');
-    router.push('/');
-  };
-
   if (!judgeId || loading) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center pt-[env(safe-area-inset-top)]">
@@ -56,23 +51,16 @@ export default function ClassementPage() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)]">
-      {/* Header FIXE en haut */}
+      {/* Header avec menu hamburger */}
       <header className="sticky top-0 z-10 bg-black border-b border-zinc-800 p-4">
         <div className="flex justify-between items-center">
-          <div>
-            <h1 className="text-xl font-bold text-pink-500">Classement</h1>
-            <p className="text-xs text-zinc-400">Juge : {judgeName}</p>
-          </div>
-          <button 
-            onClick={handleLogout}
-            className="px-3 py-1 text-sm bg-zinc-800 hover:bg-zinc-700 rounded-lg text-zinc-300"
-          >
-            Déconnexion
-          </button>
+          <SideMenu judgeName={judgeName || ''} />
+          <h1 className="text-xl font-bold text-pink-500">Classement</h1>
+          <div className="w-10"></div>
         </div>
       </header>
 
-      {/* Liste scrollable avec padding en bas pour ne pas être cachée par les boutons */}
+      {/* Liste scrollable */}
       <main className="flex-1 p-4 overflow-y-auto pb-24">
         {ranking.length === 0 ? (
           <div className="text-center text-zinc-400 mt-10">
@@ -85,9 +73,9 @@ export default function ClassementPage() {
                 <div className="text-2xl font-bold text-zinc-500 w-10 text-center">
                   #{index + 1}
                 </div>
-                <img 
-                  src={item.url} 
-                  alt={`Rank ${index + 1}`} 
+                <img
+                  src={item.url}
+                  alt={`Rank ${index + 1}`}
                   className="w-14 h-14 object-cover rounded-lg mx-3 flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">
@@ -102,16 +90,16 @@ export default function ClassementPage() {
         )}
       </main>
 
-      {/* Barre de navigation FIXE en bas */}
+      {/* Barre de navigation en bas */}
       <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-zinc-800 p-4 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
         <div className="grid grid-cols-2 gap-3">
-          <button 
+          <button
             onClick={() => router.push('/vote')}
             className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
           >
             Voter
           </button>
-          <button 
+          <button
             className="p-3 bg-zinc-700 text-white font-medium rounded-lg"
           >
             Classement
