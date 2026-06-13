@@ -56,21 +56,39 @@ export default function ClassementPage() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
-      {/* En-tête */}
-      <header className="p-4 flex justify-between items-center border-b border-zinc-800">
-        <div>
-          <h1 className="text-xl font-bold text-pink-500">Classement</h1>
-          <p className="text-xs text-zinc-400">Juge : {judgeName}</p>
+      {/* En-tête FIXE avec navigation */}
+      <header className="sticky top-0 z-10 bg-black border-b border-zinc-800">
+        <div className="p-4 flex justify-between items-center">
+          <div>
+            <h1 className="text-xl font-bold text-pink-500">Classement</h1>
+            <p className="text-xs text-zinc-400">Juge : {judgeName}</p>
+          </div>
+          <button 
+            onClick={handleLogout}
+            className="px-3 py-1 text-sm bg-zinc-800 hover:bg-zinc-700 rounded-lg text-zinc-300"
+          >
+            Déconnexion
+          </button>
         </div>
-        <button 
-          onClick={handleLogout}
-          className="px-3 py-1 text-sm bg-zinc-800 hover:bg-zinc-700 rounded-lg text-zinc-300"
-        >
-          Déconnexion
-        </button>
+        
+        {/* Navigation FIXE - Toujours visible */}
+        <div className="p-4 pt-0 grid grid-cols-2 gap-3">
+          <button 
+            onClick={() => router.push('/vote')}
+            className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
+          >
+            Voter
+          </button>
+          <button 
+            onClick={() => router.push('/classement')}
+            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
+          >
+            Classement
+          </button>
+        </div>
       </header>
 
-      {/* Liste du classement - Adapté mobile */}
+      {/* Liste scrollable */}
       <main className="flex-1 p-4 overflow-y-auto">
         {ranking.length === 0 ? (
           <div className="text-center text-zinc-400 mt-10">
@@ -99,24 +117,6 @@ export default function ClassementPage() {
           </div>
         )}
       </main>
-
-      {/* Navigation */}
-      <footer className="p-4 border-t border-zinc-800">
-        <div className="grid grid-cols-2 gap-3">
-          <button 
-            onClick={() => router.push('/vote')}
-            className="p-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors"
-          >
-            Voter
-          </button>
-          <button 
-            onClick={() => router.push('/classement')}
-            className="p-3 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors"
-          >
-            Classement
-          </button>
-        </div>
-      </footer>
     </div>
   );
 }
