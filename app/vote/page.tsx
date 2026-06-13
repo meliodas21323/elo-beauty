@@ -12,6 +12,7 @@ export default function VotePage() {
   const [rightImage, setRightImage] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [showElo, setShowElo] = useState(false);
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
@@ -22,6 +23,10 @@ export default function VotePage() {
       setJudgeId(id);
       setJudgeName(name);
     }
+
+    // Charger la préférence d'affichage Elo
+    const saved = localStorage.getItem('showElo');
+    setShowElo(saved === 'true');
   }, [router]);
 
   const fetchPair = async () => {
@@ -79,7 +84,7 @@ export default function VotePage() {
         </div>
       </header>
 
-      {/* Zone de vote - images en format original */}
+      {/* Zone de vote - images centrées et maximisées */}
       <main className="flex-1 p-3 overflow-y-auto">
         {error && (
           <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
@@ -91,38 +96,44 @@ export default function VotePage() {
           {leftImage && (
             <button
               onClick={() => handleVote(leftImage.id, rightImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-center justify-center"
+              style={{ minHeight: '200px' }}
             >
               <img
                 src={leftImage.url}
                 alt="Image gauche"
-                className="w-full h-auto object-contain"
+                className="max-w-full max-h-[calc(100dvh-280px)] object-contain"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
-                Elo: {leftImage.elo}
-              </div>
+              {showElo && (
+                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
+                  Elo: {leftImage.elo}
+                </div>
+              )}
             </button>
           )}
 
           {rightImage && (
             <button
               onClick={() => handleVote(rightImage.id, leftImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-center justify-center"
+              style={{ minHeight: '200px' }}
             >
               <img
                 src={rightImage.url}
                 alt="Image droite"
-                className="w-full h-auto object-contain"
+                className="max-w-full max-h-[calc(100dvh-280px)] object-contain"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
-                Elo: {rightImage.elo}
-              </div>
+              {showElo && (
+                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 text-center text-xs font-bold">
+                  Elo: {rightImage.elo}
+                </div>
+              )}
             </button>
           )}
         </div>
       </main>
 
-      {/* Barre de navigation en bas - boutons plus gros */}
+      {/* Barre de navigation en bas */}
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button
