@@ -30,3 +30,45 @@ button, a {
 html {
   overscroll-behavior-y: none;
 }
+
+/* Animation de flamme */
+@keyframes flame-outer {
+  0%, 100% {
+    transform: scaleY(1) scaleX(1) translateY(0);
+  }
+  25% {
+    transform: scaleY(1.05) scaleX(0.95) translateY(-2px);
+  }
+  50% {
+    transform: scaleY(0.95) scaleX(1.05) translateY(2px);
+  }
+  75% {
+    transform: scaleY(1.02) scaleX(0.98) translateY(-1px);
+  }
+}
+
+@keyframes flame-inner {
+  0%, 100% {
+    transform: scaleY(1) scaleX(1) translateY(0);
+  }
+  33% {
+    transform: scaleY(1.08) scaleX(0.92) translateY(-3px);
+  }
+  66% {
+    transform: scaleY(0.92) scaleX(1.08) translateY(3px);
+  }
+}
+
+.animate-flame-outer {
+  animation: flame-outer 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.animate-flame-inner {
+  animation: flame-inner 1.5s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.animate-flame {
+  filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.5));
+}

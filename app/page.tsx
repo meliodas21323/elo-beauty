@@ -29,12 +29,11 @@ export default function LoginPage() {
         return;
       }
 
-      // On sauvegarde les infos du juge dans le navigateur
       localStorage.setItem('judgeId', data.judge.id);
       localStorage.setItem('judgeName', data.judge.name);
 
-      // On redirige vers la page de vote
-      router.push('/vote');
+      // Redirection vers la page d'accueil avec streak
+      router.push('/accueil');
     } catch (err) {
       setError('Erreur réseau. Vérifie ta connexion.');
     } finally {
