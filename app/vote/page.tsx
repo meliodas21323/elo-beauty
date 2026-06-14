@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import SideMenu from '@/components/SideMenu';
 
@@ -13,7 +13,9 @@ export default function VotePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showElo, setShowElo] = useState(false);
-  const [isVoting, setIsVoting] = useState(false);
+  
+  // Pré-chargement de la prochaine paire
+  const nextPairRef = useRef<any>(null);
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
@@ -28,50 +30,86 @@ export default function VotePage() {
     setShowElo(saved === 'true');
   }, [router]);
 
+  // Précharger une image dans le cache du navigateur
+  const preloadImage = (url: string) => {
+    const img = new Image();
+    img.src = url;
+  };
+
   const fetchPair = async () => {
-    if (!judgeId) return;
-    setLoading(true);
-    setError('');
+    if (!judgeId) return null;
     try {
       const res = await fetch(`/api/pair?judgeId=${judgeId}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      setLeftImage(data.left);
-      setRightImage(data.right);
+      
+      // Précharger les images
+      preloadImage(data.left.url);
+      preloadImage(data.right.url);
+      
+      return data;
     } catch (err: any) {
-      setError(err.message || 'Erreur de chargement');
-    } finally {
-      setLoading(false);
+      throw new Error(err.message || 'Erreur de chargement');
     }
   };
 
+  // Charger la paire actuelle et pré-charger la suivante
   useEffect(() => {
-    if (judgeId) fetchPair();
+    if (!judgeId) return;
+
+    const loadInitialPair = async () => {
+      setLoading(true);
+      setError('');
+      try {
+        const pair = await fetchPair();
+        setLeftImage(pair.left);
+        setRightImage(pair.right);
+        
+        // Pré-charger la prochaine paire en arrière-plan
+        fetchPair().then(nextPair => {
+          if (nextPair) {
+            nextPairRef.current = nextPair;
+          }
+        }).catch(err => {
+          console.error('Erreur pré-chargement:', err);
+        });
+      } catch (err: any) {
+        setError(err.message || 'Erreur de chargement');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadInitialPair();
   }, [judgeId]);
 
   const handleVote = async (winnerId: string, loserId: string) => {
-    if (!judgeId || isVoting) return;
-    setIsVoting(true);
+    if (!judgeId) return;
     setError('');
 
-    try {
-      const res = await fetch('/api/vote-and-next', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ judgeId, winnerId, loserId }),
+    // Afficher immédiatement la paire pré-chargée
+    if (nextPairRef.current) {
+      setLeftImage(nextPairRef.current.left);
+      setRightImage(nextPairRef.current.right);
+      
+      // Pré-charger la paire suivante
+      fetchPair().then(nextPair => {
+        if (nextPair) {
+          nextPairRef.current = nextPair;
+        }
+      }).catch(err => {
+        console.error('Erreur pré-chargement:', err);
       });
-      const data = await res.json();
-      
-      if (!res.ok) throw new Error(data.error);
-      
-      // Afficher instantanément la prochaine paire
-      setLeftImage(data.next.left);
-      setRightImage(data.next.right);
-    } catch (err: any) {
-      setError(err.message || 'Erreur lors du vote');
-    } finally {
-      setIsVoting(false);
     }
+
+    // Envoyer le vote en arrière-plan (fire-and-forget)
+    fetch('/api/vote-and-next', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ judgeId, winnerId, loserId }),
+    }).catch(err => {
+      console.error('Erreur vote:', err);
+    });
   };
 
   if (!judgeId || loading) {
@@ -103,8 +141,7 @@ export default function VotePage() {
           {leftImage && (
             <button
               onClick={() => handleVote(leftImage.id, rightImage.id)}
-              disabled={isVoting}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full disabled:opacity-50"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full"
             >
               <img src={leftImage.url} alt="Image gauche" className="w-full h-full object-contain" />
               {showElo && (
@@ -118,8 +155,7 @@ export default function VotePage() {
           {rightImage && (
             <button
               onClick={() => handleVote(rightImage.id, leftImage.id)}
-              disabled={isVoting}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full disabled:opacity-50"
+              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full"
             >
               <img src={rightImage.url} alt="Image droite" className="w-full h-full object-contain" />
               {showElo && (
