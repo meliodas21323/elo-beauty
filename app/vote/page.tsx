@@ -13,24 +13,17 @@ export default function VotePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showElo, setShowElo] = useState(false);
-  
-  // Pré-chargement de la prochaine paire
   const nextPairRef = useRef<any>(null);
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
     const name = localStorage.getItem('judgeName');
-    if (!id) {
-      router.push('/');
-    } else {
-      setJudgeId(id);
-      setJudgeName(name);
-    }
+    if (!id) { router.push('/'); } 
+    else { setJudgeId(id); setJudgeName(name); }
     const saved = localStorage.getItem('showElo');
     setShowElo(saved === 'true');
   }, [router]);
 
-  // Précharger une image dans le cache du navigateur
   const preloadImage = (url: string) => {
     const img = new Image();
     img.src = url;
@@ -42,21 +35,16 @@ export default function VotePage() {
       const res = await fetch(`/api/pair?judgeId=${judgeId}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      
-      // Précharger les images
       preloadImage(data.left.url);
       preloadImage(data.right.url);
-      
       return data;
     } catch (err: any) {
       throw new Error(err.message || 'Erreur de chargement');
     }
   };
 
-  // Charger la paire actuelle et pré-charger la suivante
   useEffect(() => {
     if (!judgeId) return;
-
     const loadInitialPair = async () => {
       setLoading(true);
       setError('');
@@ -64,52 +52,29 @@ export default function VotePage() {
         const pair = await fetchPair();
         setLeftImage(pair.left);
         setRightImage(pair.right);
-        
-        // Pré-charger la prochaine paire en arrière-plan
-        fetchPair().then(nextPair => {
-          if (nextPair) {
-            nextPairRef.current = nextPair;
-          }
-        }).catch(err => {
-          console.error('Erreur pré-chargement:', err);
-        });
+        fetchPair().then(nextPair => { if (nextPair) nextPairRef.current = nextPair; }).catch(err => console.error(err));
       } catch (err: any) {
         setError(err.message || 'Erreur de chargement');
       } finally {
         setLoading(false);
       }
     };
-
     loadInitialPair();
   }, [judgeId]);
 
   const handleVote = async (winnerId: string, loserId: string) => {
     if (!judgeId) return;
     setError('');
-
-    // Afficher immédiatement la paire pré-chargée
     if (nextPairRef.current) {
       setLeftImage(nextPairRef.current.left);
       setRightImage(nextPairRef.current.right);
-      
-      // Pré-charger la paire suivante
-      fetchPair().then(nextPair => {
-        if (nextPair) {
-          nextPairRef.current = nextPair;
-        }
-      }).catch(err => {
-        console.error('Erreur pré-chargement:', err);
-      });
+      fetchPair().then(nextPair => { if (nextPair) nextPairRef.current = nextPair; }).catch(err => console.error(err));
     }
-
-    // Envoyer le vote en arrière-plan (fire-and-forget)
     fetch('/api/vote-and-next', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ judgeId, winnerId, loserId }),
-    }).catch(err => {
-      console.error('Erreur vote:', err);
-    });
+    }).catch(err => console.error('Erreur vote:', err));
   };
 
   if (!judgeId || loading) {
@@ -132,37 +97,19 @@ export default function VotePage() {
 
       <main className="flex-1 px-3 pb-3 flex flex-col justify-end overflow-hidden">
         {error && (
-          <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">
-            {error}
-          </div>
+          <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">{error}</div>
         )}
-
         <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
           {leftImage && (
-            <button
-              onClick={() => handleVote(leftImage.id, rightImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full"
-            >
+            <button onClick={() => handleVote(leftImage.id, rightImage.id)} className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full">
               <img src={leftImage.url} alt="Image gauche" className="w-full h-full object-contain" />
-              {showElo && (
-                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">
-                  Elo: {leftImage.elo}
-                </div>
-              )}
+              {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {leftImage.elo}</div>}
             </button>
           )}
-
           {rightImage && (
-            <button
-              onClick={() => handleVote(rightImage.id, leftImage.id)}
-              className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full"
-            >
+            <button onClick={() => handleVote(rightImage.id, leftImage.id)} className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full">
               <img src={rightImage.url} alt="Image droite" className="w-full h-full object-contain" />
-              {showElo && (
-                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">
-                  Elo: {rightImage.elo}
-                </div>
-              )}
+              {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {rightImage.elo}</div>}
             </button>
           )}
         </div>
@@ -170,12 +117,8 @@ export default function VotePage() {
 
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
-          <button onClick={() => router.push('/classement')} className="p-4 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors text-base">
-            Classement
-          </button>
-          <button className="p-4 bg-pink-700 text-white font-bold rounded-lg text-base">
-            Voter
-          </button>
+          <button onClick={() => router.push('/classement')} className="p-4 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors text-base">Classement</button>
+          <button className="p-4 bg-pink-700 text-white font-bold rounded-lg text-base">Voter</button>
         </div>
       </nav>
     </div>
