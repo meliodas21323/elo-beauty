@@ -46,18 +46,15 @@ export default function VotePage() {
   };
 
   const preloadPairsProgressively = (pairs: any[]) => {
-    // Précharger les 3 premières paires immédiatement (6 images)
     pairs.slice(0, 3).forEach(pair => {
       preloadImage(pair.left.url);
       preloadImage(pair.right.url);
     });
-    
-    // Précharger les 7 autres en arrière-plan avec un délai
     pairs.slice(3).forEach((pair, index) => {
       setTimeout(() => {
         preloadImage(pair.left.url);
         preloadImage(pair.right.url);
-      }, index * 200); // 200ms entre chaque paire
+      }, index * 200);
     });
   };
 
@@ -88,10 +85,8 @@ export default function VotePage() {
     loadInitialPairs();
   }, [judgeId]);
 
-  const handleVote = async (winnerId: string, loserId: string) => {
-    if (!judgeId) return;
-    setError('');
-
+  // Fonction pour avancer dans la file d'attente (utilisée par Vote et Passer)
+  const advanceQueue = () => {
     if (pairQueueRef.current.length > 0) {
       const nextPair = pairQueueRef.current[0];
       setLeftImage(nextPair.left);
@@ -103,7 +98,6 @@ export default function VotePage() {
         recentlySeenRef.current = recentlySeenRef.current.slice(-4);
       }
 
-      // Recharger quand il reste moins de 3 paires
       if (pairQueueRef.current.length < 3 && !isFetchingRef.current) {
         isFetchingRef.current = true;
         fetchPairs().then(pairs => {
@@ -116,12 +110,27 @@ export default function VotePage() {
         });
       }
     }
+  };
 
+  const handleVote = async (winnerId: string, loserId: string) => {
+    if (!judgeId) return;
+    setError('');
+    
+    // 1. Avancer dans la file instantanément
+    advanceQueue();
+
+    // 2. Envoyer le vote en arrière-plan
     fetch('/api/vote', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ judgeId, winnerId, loserId }),
     }).catch(err => console.error('Erreur vote:', err));
+  };
+
+  const handleSkip = () => {
+    setError('');
+    // Avance dans la file SANS envoyer de vote
+    advanceQueue();
   };
 
   if (!judgeId || loading) {
@@ -142,7 +151,7 @@ export default function VotePage() {
         </div>
       </header>
 
-      <main className="flex-1 px-3 pb-3 flex flex-col justify-end overflow-hidden">
+      <main className="flex-1 px-3 pb-2 flex flex-col justify-end overflow-hidden min-h-0">
         {error && (
           <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">{error}</div>
         )}
@@ -161,6 +170,19 @@ export default function VotePage() {
           )}
         </div>
       </main>
+
+      {/* Bouton Passer */}
+      <div className="flex-shrink-0 py-2 flex justify-center bg-black">
+        <button
+          onClick={handleSkip}
+          className="px-6 py-2.5 bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 font-medium rounded-full transition-all text-sm flex items-center gap-2 border border-zinc-700"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          Passer ce duel
+        </button>
+      </div>
 
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
