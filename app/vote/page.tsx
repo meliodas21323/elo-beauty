@@ -14,8 +14,9 @@ export default function VotePage() {
   const [error, setError] = useState('');
   const [showElo, setShowElo] = useState(false);
   
-  // File d'attente des paires
   const pairQueueRef = useRef<any[]>([]);
+  const recentlySeenRef = useRef<string[]>([]);
+  const isFetchingRef = useRef(false);
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
@@ -34,20 +35,30 @@ export default function VotePage() {
   const fetchPairs = async () => {
     if (!judgeId) return [];
     try {
-      const res = await fetch(`/api/pair?judgeId=${judgeId}`);
+      const excludeIds = recentlySeenRef.current.join(',');
+      const res = await fetch(`/api/pair?judgeId=${judgeId}&excludeIds=${excludeIds}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      
-      // Précharger toutes les images
-      data.pairs.forEach((pair: any) => {
-        preloadImage(pair.left.url);
-        preloadImage(pair.right.url);
-      });
-      
       return data.pairs;
     } catch (err: any) {
       throw new Error(err.message || 'Erreur de chargement');
     }
+  };
+
+  const preloadPairsProgressively = (pairs: any[]) => {
+    // Précharger les 3 premières paires immédiatement (6 images)
+    pairs.slice(0, 3).forEach(pair => {
+      preloadImage(pair.left.url);
+      preloadImage(pair.right.url);
+    });
+    
+    // Précharger les 7 autres en arrière-plan avec un délai
+    pairs.slice(3).forEach((pair, index) => {
+      setTimeout(() => {
+        preloadImage(pair.left.url);
+        preloadImage(pair.right.url);
+      }, index * 200); // 200ms entre chaque paire
+    });
   };
 
   useEffect(() => {
@@ -59,12 +70,13 @@ export default function VotePage() {
       try {
         const pairs = await fetchPairs();
         pairQueueRef.current = pairs;
+        preloadPairsProgressively(pairs);
         
-        // Afficher la première paire
         if (pairs.length > 0) {
           setLeftImage(pairs[0].left);
           setRightImage(pairs[0].right);
           pairQueueRef.current = pairs.slice(1);
+          recentlySeenRef.current.push(pairs[0].left.id, pairs[0].right.id);
         }
       } catch (err: any) {
         setError(err.message || 'Erreur de chargement');
@@ -80,22 +92,31 @@ export default function VotePage() {
     if (!judgeId) return;
     setError('');
 
-    // Afficher immédiatement la paire suivante de la file
     if (pairQueueRef.current.length > 0) {
       const nextPair = pairQueueRef.current[0];
       setLeftImage(nextPair.left);
       setRightImage(nextPair.right);
       pairQueueRef.current = pairQueueRef.current.slice(1);
       
-      // Si la file est vide, recharger
-      if (pairQueueRef.current.length === 0) {
+      recentlySeenRef.current.push(nextPair.left.id, nextPair.right.id);
+      if (recentlySeenRef.current.length > 4) {
+        recentlySeenRef.current = recentlySeenRef.current.slice(-4);
+      }
+
+      // Recharger quand il reste moins de 3 paires
+      if (pairQueueRef.current.length < 3 && !isFetchingRef.current) {
+        isFetchingRef.current = true;
         fetchPairs().then(pairs => {
-          pairQueueRef.current = pairs;
-        }).catch(err => console.error(err));
+          pairQueueRef.current = [...pairQueueRef.current, ...pairs];
+          preloadPairsProgressively(pairs);
+          isFetchingRef.current = false;
+        }).catch(err => {
+          console.error(err);
+          isFetchingRef.current = false;
+        });
       }
     }
 
-    // Envoyer le vote en arrière-plan (fire-and-forget)
     fetch('/api/vote', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
