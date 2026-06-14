@@ -16,13 +16,10 @@ export default function VotePage() {
   const [animatingImage, setAnimatingImage] = useState<'left' | 'right' | null>(null);
   const [showFlash, setShowFlash] = useState(false);
   const [particles, setParticles] = useState<any[]>([]);
-  const [comboCount, setComboCount] = useState(0);
-  const [showCombo, setShowCombo] = useState(false);
   
   const pairQueueRef = useRef<any[]>([]);
   const recentlySeenRef = useRef<string[]>([]);
   const isFetchingRef = useRef(false);
-  const comboTimerRef = useRef<any>(null);
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
@@ -91,7 +88,6 @@ export default function VotePage() {
     loadInitialPairs();
   }, [judgeId]);
 
-  // Créer des particules d'explosion
   const createParticles = (side: 'left' | 'right') => {
     const newParticles = [];
     const colors = ['#ff6b35', '#f7931e', '#ffcc00', '#ff1744', '#e91e63'];
@@ -114,22 +110,6 @@ export default function VotePage() {
     
     setParticles(newParticles);
     setTimeout(() => setParticles([]), 600);
-  };
-
-  // Gérer le combo
-  const updateCombo = () => {
-    setComboCount(prev => {
-      const newCount = prev + 1;
-      if (newCount >= 5) {
-        setShowCombo(true);
-        setTimeout(() => setShowCombo(false), 1500);
-      }
-      return newCount;
-    });
-    
-    // Reset le combo après 3 secondes d'inactivité
-    if (comboTimerRef.current) clearTimeout(comboTimerRef.current);
-    comboTimerRef.current = setTimeout(() => setComboCount(0), 3000);
   };
 
   const advanceQueue = () => {
@@ -164,18 +144,18 @@ export default function VotePage() {
     
     const clickedSide = winnerId === leftImage.id ? 'left' : 'right';
     
-    // Effets dopaminergiques
+    // Effets satisfaisants (sans combo)
     setAnimatingImage(clickedSide);
     setShowFlash(true);
     createParticles(clickedSide);
-    updateCombo();
     
     setTimeout(() => setShowFlash(false), 300);
     
+    // Animation un peu plus longue pour encourager la réflexion
     setTimeout(() => {
       setAnimatingImage(null);
       advanceQueue();
-    }, 350);
+    }, 400);
 
     fetch('/api/vote', {
       method: 'POST',
@@ -210,15 +190,6 @@ export default function VotePage() {
       {showFlash && (
         <div className="absolute inset-0 bg-white vote-flash pointer-events-none z-50"></div>
       )}
-      
-      {/* Combo counter */}
-      {showCombo && (
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 z-50 pointer-events-none">
-          <div className="combo-counter text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 drop-shadow-2xl">
-            🔥 {comboCount}x COMBO!
-          </div>
-        </div>
-      )}
 
       <header className="flex-shrink-0 bg-black border-b border-zinc-800 px-4 py-3 relative z-10" style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}>
         <div className="flex justify-between items-center">
@@ -245,7 +216,6 @@ export default function VotePage() {
               <img src={leftImage.url} alt="Image gauche" className="w-full h-full object-contain" />
               {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {leftImage.elo}</div>}
               
-              {/* Particules */}
               {particles.filter(p => p.side === 'left').map(particle => (
                 <div
                   key={particle.id}
@@ -275,7 +245,6 @@ export default function VotePage() {
               <img src={rightImage.url} alt="Image droite" className="w-full h-full object-contain" />
               {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {rightImage.elo}</div>}
               
-              {/* Particules */}
               {particles.filter(p => p.side === 'right').map(particle => (
                 <div
                   key={particle.id}
