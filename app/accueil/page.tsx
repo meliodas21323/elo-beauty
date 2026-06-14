@@ -26,7 +26,6 @@ export default function AccueilPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ judgeId })
     }).then(() => {
-      // Récupérer le streak
       return fetch(`/api/login-history?judgeId=${judgeId}`);
     }).then(res => res.json()).then(data => {
       setStreak(data.streak);
@@ -55,13 +54,11 @@ export default function AccueilPage() {
           viewBox="0 0 120 160"
           className="animate-flame"
         >
-          {/* Flamme extérieure */}
           <path
             d="M60 10 C70 40, 90 60, 90 90 C90 120, 75 140, 60 140 C45 140, 30 120, 30 90 C30 60, 50 40, 60 10 Z"
             fill="url(#flameGradient)"
             className="animate-flame-outer"
           />
-          {/* Flamme intérieure */}
           <path
             d="M60 40 C65 60, 75 75, 75 95 C75 115, 68 130, 60 130 C52 130, 45 115, 45 95 C45 75, 55 60, 60 40 Z"
             fill="url(#innerFlameGradient)"
@@ -87,7 +84,6 @@ export default function AccueilPage() {
           {streak}
         </div>
         <div className="text-xl text-zinc-400">
-          {streak === 0 && "Première connexion !"}
           {streak === 1 && "jour d'affilée"}
           {streak > 1 && "jours d'affilée"}
         </div>
@@ -95,29 +91,44 @@ export default function AccueilPage() {
 
       {/* Message de motivation */}
       <div className="text-center mb-12 max-w-sm">
-        {streak === 0 && (
-          <p className="text-lg text-zinc-300">
-            Bienvenue <span className="text-pink-500 font-bold">{judgeName}</span> ! Commence ta série maintenant 🔥
-          </p>
-        )}
         {streak === 1 && (
           <p className="text-lg text-zinc-300">
-            Bon début <span className="text-pink-500 font-bold">{judgeName}</span> ! Continue demain pour garder ta flamme 🔥
+            Premier jour de connexion ! Commence ta série maintenant 🔥
           </p>
         )}
-        {streak >= 2 && streak < 7 && (
+        {streak === 2 && (
           <p className="text-lg text-zinc-300">
-            Excellent <span className="text-pink-500 font-bold">{judgeName}</span> ! {streak} jours, ne lâche rien ! 🔥
+            Bon début <span className="text-pink-500 font-bold">{judgeName}</span> ! 2 jours, continue comme ça ! 
           </p>
         )}
-        {streak >= 7 && streak < 30 && (
+        {streak >= 3 && streak <= 6 && (
           <p className="text-lg text-zinc-300">
-            Impressionnant <span className="text-pink-500 font-bold">{judgeName}</span> ! {streak} jours de suite ! 🔥🔥
+            Bravo <span className="text-pink-500 font-bold">{judgeName}</span> ! {streak} jours d'affilée, tu prends le rythme ! 🔥
           </p>
         )}
-        {streak >= 30 && (
+        {streak === 7 && (
           <p className="text-lg text-zinc-300">
-            Légendaire <span className="text-pink-500 font-bold">{judgeName}</span> ! {streak} jours, tu es un vrai juge ! 🔥🔥
+            Une semaine complète <span className="text-pink-500 font-bold">{judgeName}</span> ! Impressionnant ! 🔥
+          </p>
+        )}
+        {streak === 14 && (
+          <p className="text-lg text-zinc-300">
+            2 semaines <span className="text-pink-500 font-bold">{judgeName}</span> ! Tu es un vrai juge ! 🔥
+          </p>
+        )}
+        {streak === 21 && (
+          <p className="text-lg text-zinc-300">
+            3 semaines <span className="text-pink-500 font-bold">{judgeName}</span> ! Tu ne lâches rien ! 🔥
+          </p>
+        )}
+        {streak === 30 && (
+          <p className="text-lg text-zinc-300">
+            Un mois entier <span className="text-pink-500 font-bold">{judgeName}</span> ! Légendaire ! 🔥
+          </p>
+        )}
+        {streak >= 60 && (
+          <p className="text-lg text-zinc-300">
+            <span className="text-pink-500 font-bold">{judgeName}</span>, tu es une légende vivante ! {streak} jours ! 🔥🔥
           </p>
         )}
       </div>
