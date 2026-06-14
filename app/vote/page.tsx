@@ -14,10 +14,15 @@ export default function VotePage() {
   const [error, setError] = useState('');
   const [showElo, setShowElo] = useState(false);
   const [animatingImage, setAnimatingImage] = useState<'left' | 'right' | null>(null);
+  const [showFlash, setShowFlash] = useState(false);
+  const [particles, setParticles] = useState<any[]>([]);
+  const [comboCount, setComboCount] = useState(0);
+  const [showCombo, setShowCombo] = useState(false);
   
   const pairQueueRef = useRef<any[]>([]);
   const recentlySeenRef = useRef<string[]>([]);
   const isFetchingRef = useRef(false);
+  const comboTimerRef = useRef<any>(null);
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
@@ -86,7 +91,47 @@ export default function VotePage() {
     loadInitialPairs();
   }, [judgeId]);
 
-  // Fonction pour avancer dans la file d'attente (utilisée par Vote et Passer)
+  // Créer des particules d'explosion
+  const createParticles = (side: 'left' | 'right') => {
+    const newParticles = [];
+    const colors = ['#ff6b35', '#f7931e', '#ffcc00', '#ff1744', '#e91e63'];
+    
+    for (let i = 0; i < 12; i++) {
+      const angle = (Math.PI * 2 * i) / 12;
+      const distance = 80 + Math.random() * 40;
+      const tx = Math.cos(angle) * distance;
+      const ty = Math.sin(angle) * distance;
+      
+      newParticles.push({
+        id: Date.now() + i,
+        side,
+        tx,
+        ty,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        size: 6 + Math.random() * 6
+      });
+    }
+    
+    setParticles(newParticles);
+    setTimeout(() => setParticles([]), 600);
+  };
+
+  // Gérer le combo
+  const updateCombo = () => {
+    setComboCount(prev => {
+      const newCount = prev + 1;
+      if (newCount >= 5) {
+        setShowCombo(true);
+        setTimeout(() => setShowCombo(false), 1500);
+      }
+      return newCount;
+    });
+    
+    // Reset le combo après 3 secondes d'inactivité
+    if (comboTimerRef.current) clearTimeout(comboTimerRef.current);
+    comboTimerRef.current = setTimeout(() => setComboCount(0), 3000);
+  };
+
   const advanceQueue = () => {
     if (pairQueueRef.current.length > 0) {
       const nextPair = pairQueueRef.current[0];
@@ -117,17 +162,21 @@ export default function VotePage() {
     if (!judgeId || animatingImage) return;
     setError('');
     
-    // Déterminer quelle image a été cliquée
     const clickedSide = winnerId === leftImage.id ? 'left' : 'right';
-    setAnimatingImage(clickedSide);
     
-    // Attendre la fin de l'animation (250ms)
+    // Effets dopaminergiques
+    setAnimatingImage(clickedSide);
+    setShowFlash(true);
+    createParticles(clickedSide);
+    updateCombo();
+    
+    setTimeout(() => setShowFlash(false), 300);
+    
     setTimeout(() => {
       setAnimatingImage(null);
       advanceQueue();
-    }, 250);
+    }, 350);
 
-    // Envoyer le vote en arrière-plan
     fetch('/api/vote', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -139,7 +188,6 @@ export default function VotePage() {
     if (animatingImage) return;
     setError('');
     
-    // Animation légère pour les deux images
     setAnimatingImage('left');
     
     setTimeout(() => {
@@ -157,8 +205,22 @@ export default function VotePage() {
   }
 
   return (
-    <div className="h-dvh bg-black text-white flex flex-col overflow-hidden">
-      <header className="flex-shrink-0 bg-black border-b border-zinc-800 px-4 py-3" style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}>
+    <div className="h-dvh bg-black text-white flex flex-col overflow-hidden relative">
+      {/* Flash lumineux */}
+      {showFlash && (
+        <div className="absolute inset-0 bg-white vote-flash pointer-events-none z-50"></div>
+      )}
+      
+      {/* Combo counter */}
+      {showCombo && (
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 z-50 pointer-events-none">
+          <div className="combo-counter text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 drop-shadow-2xl">
+            🔥 {comboCount}x COMBO!
+          </div>
+        </div>
+      )}
+
+      <header className="flex-shrink-0 bg-black border-b border-zinc-800 px-4 py-3 relative z-10" style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}>
         <div className="flex justify-between items-center">
           <SideMenu judgeName={judgeName || ''} />
           <h1 className="text-xl font-bold text-pink-500">Elo Beauty</h1>
@@ -166,11 +228,11 @@ export default function VotePage() {
         </div>
       </header>
 
-      <main className="flex-1 px-3 pb-2 flex flex-col justify-end overflow-hidden min-h-0">
+      <main className="flex-1 px-3 pb-2 flex flex-col justify-end overflow-hidden min-h-0 relative">
         {error && (
           <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">{error}</div>
         )}
-        <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
+        <div className="grid grid-cols-2 gap-3 flex-1 min-h-0 relative">
           {leftImage && (
             <button 
               onClick={() => handleVote(leftImage.id, rightImage.id)} 
@@ -182,6 +244,23 @@ export default function VotePage() {
             >
               <img src={leftImage.url} alt="Image gauche" className="w-full h-full object-contain" />
               {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {leftImage.elo}</div>}
+              
+              {/* Particules */}
+              {particles.filter(p => p.side === 'left').map(particle => (
+                <div
+                  key={particle.id}
+                  className="particle"
+                  style={{
+                    left: '50%',
+                    top: '50%',
+                    backgroundColor: particle.color,
+                    width: `${particle.size}px`,
+                    height: `${particle.size}px`,
+                    '--tx': `${particle.tx}px`,
+                    '--ty': `${particle.ty}px`
+                  } as any}
+                />
+              ))}
             </button>
           )}
           {rightImage && (
@@ -195,13 +274,30 @@ export default function VotePage() {
             >
               <img src={rightImage.url} alt="Image droite" className="w-full h-full object-contain" />
               {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {rightImage.elo}</div>}
+              
+              {/* Particules */}
+              {particles.filter(p => p.side === 'right').map(particle => (
+                <div
+                  key={particle.id}
+                  className="particle"
+                  style={{
+                    left: '50%',
+                    top: '50%',
+                    backgroundColor: particle.color,
+                    width: `${particle.size}px`,
+                    height: `${particle.size}px`,
+                    '--tx': `${particle.tx}px`,
+                    '--ty': `${particle.ty}px`
+                  } as any}
+                />
+              ))}
             </button>
           )}
         </div>
       </main>
 
       {/* Bouton Passer */}
-      <div className="flex-shrink-0 py-2 flex justify-center bg-black">
+      <div className="flex-shrink-0 py-2 flex justify-center bg-black relative z-10">
         <button
           onClick={handleSkip}
           disabled={!!animatingImage}
@@ -214,7 +310,7 @@ export default function VotePage() {
         </button>
       </div>
 
-      <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
+      <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3 relative z-10" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button onClick={() => router.push('/classement')} className="p-4 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors text-base">Classement</button>
           <button className="p-4 bg-pink-700 text-white font-bold rounded-lg text-base">Voter</button>
