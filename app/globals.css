@@ -72,3 +72,45 @@ html {
 .animate-flame {
   filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.5));
 }
+
+/* Animation de vote : l'image choisie zoom et disparaît */
+@keyframes vote-selected {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+@keyframes vote-rejected {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0; }
+}
+
+.vote-selected {
+  animation: vote-selected 0.25s ease-out forwards;
+}
+
+.vote-rejected {
+  animation: vote-rejected 0.3s ease-out forwards;
+  animation-delay: 0.05s;
+}
+
+/* Animation de vote : l'image choisie zoom et disparaît */
+@keyframes vote-selected {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+@keyframes vote-rejected {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0; }
+}
+
+.vote-selected {
+  animation: vote-selected 0.25s ease-out forwards;
+}
+
+.vote-rejected {
+  animation: vote-rejected 0.3s ease-out forwards;
+  animation-delay: 0.05s;
+}

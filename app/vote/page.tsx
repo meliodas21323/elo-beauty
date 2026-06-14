@@ -13,6 +13,7 @@ export default function VotePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showElo, setShowElo] = useState(false);
+  const [animatingImage, setAnimatingImage] = useState<'left' | 'right' | null>(null);
   
   const pairQueueRef = useRef<any[]>([]);
   const recentlySeenRef = useRef<string[]>([]);
@@ -113,13 +114,20 @@ export default function VotePage() {
   };
 
   const handleVote = async (winnerId: string, loserId: string) => {
-    if (!judgeId) return;
+    if (!judgeId || animatingImage) return;
     setError('');
     
-    // 1. Avancer dans la file instantanément
-    advanceQueue();
+    // Déterminer quelle image a été cliquée
+    const clickedSide = winnerId === leftImage.id ? 'left' : 'right';
+    setAnimatingImage(clickedSide);
+    
+    // Attendre la fin de l'animation (250ms)
+    setTimeout(() => {
+      setAnimatingImage(null);
+      advanceQueue();
+    }, 250);
 
-    // 2. Envoyer le vote en arrière-plan
+    // Envoyer le vote en arrière-plan
     fetch('/api/vote', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -128,9 +136,16 @@ export default function VotePage() {
   };
 
   const handleSkip = () => {
+    if (animatingImage) return;
     setError('');
-    // Avance dans la file SANS envoyer de vote
-    advanceQueue();
+    
+    // Animation légère pour les deux images
+    setAnimatingImage('left');
+    
+    setTimeout(() => {
+      setAnimatingImage(null);
+      advanceQueue();
+    }, 200);
   };
 
   if (!judgeId || loading) {
@@ -157,13 +172,27 @@ export default function VotePage() {
         )}
         <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
           {leftImage && (
-            <button onClick={() => handleVote(leftImage.id, rightImage.id)} className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full">
+            <button 
+              onClick={() => handleVote(leftImage.id, rightImage.id)} 
+              disabled={!!animatingImage}
+              className={`relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all bg-zinc-900 flex items-end justify-center w-full h-full ${
+                animatingImage === 'left' ? 'vote-selected' : 
+                animatingImage === 'right' ? 'vote-rejected' : ''
+              }`}
+            >
               <img src={leftImage.url} alt="Image gauche" className="w-full h-full object-contain" />
               {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {leftImage.elo}</div>}
             </button>
           )}
           {rightImage && (
-            <button onClick={() => handleVote(rightImage.id, leftImage.id)} className="relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all active:scale-95 bg-zinc-900 flex items-end justify-center w-full h-full">
+            <button 
+              onClick={() => handleVote(rightImage.id, leftImage.id)} 
+              disabled={!!animatingImage}
+              className={`relative rounded-xl overflow-hidden border-2 border-transparent hover:border-pink-500 transition-all bg-zinc-900 flex items-end justify-center w-full h-full ${
+                animatingImage === 'right' ? 'vote-selected' : 
+                animatingImage === 'left' ? 'vote-rejected' : ''
+              }`}
+            >
               <img src={rightImage.url} alt="Image droite" className="w-full h-full object-contain" />
               {showElo && <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 text-center text-xs font-bold">Elo: {rightImage.elo}</div>}
             </button>
@@ -175,7 +204,8 @@ export default function VotePage() {
       <div className="flex-shrink-0 py-2 flex justify-center bg-black">
         <button
           onClick={handleSkip}
-          className="px-6 py-2.5 bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 font-medium rounded-full transition-all text-sm flex items-center gap-2 border border-zinc-700"
+          disabled={!!animatingImage}
+          className="px-6 py-2.5 bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 font-medium rounded-full transition-all text-sm flex items-center gap-2 border border-zinc-700 disabled:opacity-50"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
