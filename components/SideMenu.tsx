@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface SideMenuProps {
@@ -12,10 +12,14 @@ const ADMIN_UUID = '4725ed22-bb74-44e2-aad2-97efc1247f0a';
 
 export default function SideMenu({ judgeName }: SideMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
 
-  // Vérifier si l'utilisateur connecté est l'admin
-  const isAdmin = typeof window !== 'undefined' && localStorage.getItem('judgeId') === ADMIN_UUID;
+  // Vérifier l'admin APRÈS le chargement (côté client uniquement)
+  useEffect(() => {
+    const judgeId = localStorage.getItem('judgeId');
+    setIsAdmin(judgeId === ADMIN_UUID);
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem('judgeId');
