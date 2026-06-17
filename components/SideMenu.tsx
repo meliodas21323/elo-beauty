@@ -7,9 +7,15 @@ interface SideMenuProps {
   judgeName: string;
 }
 
+// UUID de Meliodas (seul admin autorisé)
+const ADMIN_UUID = '4725ed22-bb74-44e2-aad2-97efc1247f0a';
+
 export default function SideMenu({ judgeName }: SideMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
+
+  // Vérifier si l'utilisateur connecté est l'admin
+  const isAdmin = typeof window !== 'undefined' && localStorage.getItem('judgeId') === ADMIN_UUID;
 
   const handleLogout = () => {
     localStorage.removeItem('judgeId');
@@ -139,6 +145,22 @@ export default function SideMenu({ judgeName }: SideMenuProps) {
             </svg>
             Paramètres
           </button>
+
+          {/* Bouton Admin (visible uniquement par Meliodas) */}
+          {isAdmin && (
+            <>
+              <div className="border-t border-zinc-800 my-5"></div>
+              <button
+                onClick={() => navigate('/admin')}
+                className="w-full text-left p-5 hover:bg-pink-900/30 rounded-xl text-pink-400 transition-colors flex items-center gap-4 text-lg font-medium border border-pink-900/50"
+              >
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                Dashboard Admin
+              </button>
+            </>
+          )}
 
           <div className="border-t border-zinc-800 my-5"></div>
 
