@@ -17,9 +17,10 @@ export default function SideMenu({ judgeName }: SideMenuProps) {
 
   // Vérifier l'admin APRÈS le chargement (côté client uniquement)
   useEffect(() => {
-    const judgeId = localStorage.getItem('judgeId');
-    setIsAdmin(judgeId === ADMIN_UUID);
-  }, []);
+  const judgeId = localStorage.getItem('judgeId');
+  alert(`judgeId: ${judgeId}\nADMIN_UUID: ${ADMIN_UUID}\nMatch: ${judgeId === ADMIN_UUID}`);
+  setIsAdmin(judgeId === ADMIN_UUID);
+}, []);
 
   const handleLogout = () => {
     localStorage.removeItem('judgeId');
