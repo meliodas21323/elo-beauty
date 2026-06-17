@@ -17,6 +17,10 @@ export default function VotePage() {
   const [showFlash, setShowFlash] = useState(false);
   const [particles, setParticles] = useState<any[]>([]);
   
+  // États pour le bouton Annuler
+  const [lastVote, setLastVote] = useState<{ winnerId: string; loserId: string; timestamp: number } | null>(null);
+  const [undoTimeLeft, setUndoTimeLeft] = useState(0);
+
   const pairQueueRef = useRef<any[]>([]);
   const recentlySeenRef = useRef<string[]>([]);
   const isFetchingRef = useRef(false);
@@ -29,6 +33,16 @@ export default function VotePage() {
     const saved = localStorage.getItem('showElo');
     setShowElo(saved === 'true');
   }, [router]);
+
+  // Timer pour le bouton Annuler (10 secondes)
+  useEffect(() => {
+    if (undoTimeLeft > 0) {
+      const timer = setTimeout(() => setUndoTimeLeft(undoTimeLeft - 1), 1000);
+      return () => clearTimeout(timer);
+    } else if (undoTimeLeft === 0 && lastVote) {
+      setLastVote(null); // Cache le bouton après 10s
+    }
+  }, [undoTimeLeft, lastVote]);
 
   const preloadImage = (url: string) => {
     const img = new Image();
@@ -144,18 +158,20 @@ export default function VotePage() {
     
     const clickedSide = winnerId === leftImage.id ? 'left' : 'right';
     
-    // Effets satisfaisants (sans combo)
     setAnimatingImage(clickedSide);
     setShowFlash(true);
     createParticles(clickedSide);
     
     setTimeout(() => setShowFlash(false), 300);
     
-    // Animation un peu plus longue pour encourager la réflexion
     setTimeout(() => {
       setAnimatingImage(null);
       advanceQueue();
     }, 400);
+
+    // Enregistrer le vote pour permettre l'annulation
+    setLastVote({ winnerId, loserId, timestamp: Date.now() });
+    setUndoTimeLeft(10); // 10 secondes pour annuler
 
     fetch('/api/vote', {
       method: 'POST',
@@ -169,11 +185,32 @@ export default function VotePage() {
     setError('');
     
     setAnimatingImage('left');
+    setLastVote(null); // Pas d'annulation pour un skip
     
     setTimeout(() => {
       setAnimatingImage(null);
       advanceQueue();
     }, 200);
+  };
+
+  const handleUndo = async () => {
+    if (!lastVote || !judgeId) return;
+    setError('');
+    
+    // Appel à l'API pour annuler le vote
+    const res = await fetch('/api/undo-vote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ judgeId, winnerId: lastVote.winnerId, loserId: lastVote.loserId }),
+    });
+
+    if (res.ok) {
+      setLastVote(null);
+      setUndoTimeLeft(0);
+      // Optionnel : on pourrait recharger la paire actuelle, mais on laisse l'utilisateur continuer
+    } else {
+      setError("Impossible d'annuler ce vote.");
+    }
   };
 
   if (!judgeId || loading) {
@@ -186,7 +223,6 @@ export default function VotePage() {
 
   return (
     <div className="h-dvh bg-black text-white flex flex-col overflow-hidden relative">
-      {/* Flash lumineux */}
       {showFlash && (
         <div className="absolute inset-0 bg-white vote-flash pointer-events-none z-50"></div>
       )}
@@ -221,13 +257,9 @@ export default function VotePage() {
                   key={particle.id}
                   className="particle"
                   style={{
-                    left: '50%',
-                    top: '50%',
-                    backgroundColor: particle.color,
-                    width: `${particle.size}px`,
-                    height: `${particle.size}px`,
-                    '--tx': `${particle.tx}px`,
-                    '--ty': `${particle.ty}px`
+                    left: '50%', top: '50%', backgroundColor: particle.color,
+                    width: `${particle.size}px`, height: `${particle.size}px`,
+                    '--tx': `${particle.tx}px`, '--ty': `${particle.ty}px`
                   } as any}
                 />
               ))}
@@ -250,13 +282,9 @@ export default function VotePage() {
                   key={particle.id}
                   className="particle"
                   style={{
-                    left: '50%',
-                    top: '50%',
-                    backgroundColor: particle.color,
-                    width: `${particle.size}px`,
-                    height: `${particle.size}px`,
-                    '--tx': `${particle.tx}px`,
-                    '--ty': `${particle.ty}px`
+                    left: '50%', top: '50%', backgroundColor: particle.color,
+                    width: `${particle.size}px`, height: `${particle.size}px`,
+                    '--tx': `${particle.tx}px`, '--ty': `${particle.ty}px`
                   } as any}
                 />
               ))}
@@ -278,6 +306,19 @@ export default function VotePage() {
           Passer ce duel
         </button>
       </div>
+
+      {/* Bouton Annuler (Flottant) */}
+      {lastVote && (
+        <button
+          onClick={handleUndo}
+          className="absolute bottom-24 right-4 z-50 bg-zinc-800/90 backdrop-blur-sm border border-zinc-600 text-white px-4 py-2 rounded-full shadow-lg active:scale-95 transition-all flex items-center gap-2 text-sm font-medium"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+          </svg>
+          Annuler ({undoTimeLeft}s)
+        </button>
+      )}
 
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3 relative z-10" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
