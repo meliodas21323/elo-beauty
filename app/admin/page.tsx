@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-const ADMIN_UUID = '4725ed22-bb74-44e2-aad2-97efc1247f0a';
+const ADMIN_UUID = 'd8bf9451-284c-4927-bae2-f0910905f44e';
 
 export default function AdminPage() {
   const router = useRouter();
