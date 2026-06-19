@@ -197,7 +197,7 @@ export default function AdminPage() {
                     <div className="text-xs text-zinc-500 mb-2">Votes par jour</div>
                     <div className="flex items-end gap-1 h-16">
                       {Object.entries(judge.votesByDay).map(([day, count]: [string, any]) => {
-                        const maxVotes = Math.max(...Object.values(judge.votesByDay));
+                        const maxVotes = Math.max(...judge.dailyVotes.map((d: any) => d.count));
                         const height = (count / maxVotes) * 100;
                         return (
                           <div key={day} className="flex-1 flex flex-col items-center gap-1">
