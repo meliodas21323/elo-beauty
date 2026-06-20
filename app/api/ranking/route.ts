@@ -11,11 +11,12 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
-  // 1. Récupérer les scores du juge
+  // 1. Récupérer les scores du juge (avec range pour éviter la limite de 1000)
   const { data: scores, error: scoresError } = await supabase
     .from('elo_scores')
     .select('image_id, elo, votes, wins, losses')
-    .eq('judge_id', judgeId);
+    .eq('judge_id', judgeId)
+    .range(0, 2000);  // ✅ Permet de récupérer jusqu'à 2000 images
 
   if (scoresError) {
     console.error("Erreur scores:", scoresError);
