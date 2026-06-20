@@ -68,29 +68,37 @@ export default function ClassementPage() {
           </div>
         ) : (
           <div className="space-y-3">
-            {ranking.map((item, index) => (
-              <div key={item.id} className="flex items-center bg-zinc-900 p-3 rounded-xl border border-zinc-800">
-                <div className="text-2xl font-bold text-zinc-500 w-10 text-center">
-                  #{index + 1}
-                </div>
-                <img
-                  src={item.url}
-                  alt={`Rank ${index + 1}`}
-                  className="w-14 h-14 object-cover rounded-lg mx-3 flex-shrink-0"
-                />
-                <div className="flex-1 min-w-0">
-                  <div className="text-base font-bold text-white">Elo: {item.elo}</div>
-                  <div className="text-xs text-zinc-400">
-                    {item.votes} votes ({item.wins}V - {item.losses}D)
+            {ranking.map((item, index) => {
+              const rank = index + 1;
+              // Ajuster la taille de police selon le nombre de chiffres
+              const rankText = `#${rank}`;
+              const fontSize = rank >= 1000 ? 'text-lg' : rank >= 100 ? 'text-xl' : 'text-2xl';
+              
+              return (
+                <div key={item.id} className="flex items-center bg-zinc-900 p-3 rounded-xl border border-zinc-800">
+                  {/* ✅ Conteneur élargi de w-10 à w-14 pour accueillir #1000 */}
+                  <div className={`${fontSize} font-bold text-zinc-500 w-14 text-center flex-shrink-0`}>
+                    {rankText}
+                  </div>
+                  <img
+                    src={item.url}
+                    alt={`Rank ${rank}`}
+                    className="w-14 h-14 object-cover rounded-lg mx-3 flex-shrink-0"
+                  />
+                  <div className="flex-1 min-w-0">
+                    <div className="text-base font-bold text-white">Elo: {item.elo}</div>
+                    <div className="text-xs text-zinc-400">
+                      {item.votes} votes ({item.wins}V - {item.losses}D)
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </main>
 
-      {/* Barre de navigation en bas - boutons plus gros */}
+      {/* Barre de navigation en bas */}
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-3">
           <button
