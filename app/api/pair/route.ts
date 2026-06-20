@@ -13,9 +13,11 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
+  // ✅ CORRECTION ICI : Ajout de .range(0, 2000) pour récupérer toutes les images
   const { data: images } = await supabase
     .from('images')
     .select('id, cloudinary_url')
+    .range(0, 2000)
     .order('id');
 
   const { data: scores } = await supabase
