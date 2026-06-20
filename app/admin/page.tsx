@@ -12,13 +12,16 @@ export default function AdminPage() {
   const [data, setData] = useState<any>(null);
   const [showDebateImage, setShowDebateImage] = useState<any>(null);
   
-  // États pour le mot de passe
+  // États pour le mot de passe admin
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [adminPassword, setAdminPassword] = useState('');
   const [loginError, setLoginError] = useState('');
 
+  // États pour la création de juge
   const [showCreateJudgeModal, setShowCreateJudgeModal] = useState(false);
   const [newJudgeName, setNewJudgeName] = useState('');
+  const [newJudgeLogin, setNewJudgeLogin] = useState('');
+  const [newJudgePassword, setNewJudgePassword] = useState('');
   const [creatingJudge, setCreatingJudge] = useState(false);
 
   // Vérification initiale
@@ -28,7 +31,6 @@ export default function AdminPage() {
       router.push('/');
       return;
     }
-    // Si on a déjà le mot de passe en session, on l'utilise
     const savedKey = sessionStorage.getItem('adminKey');
     if (savedKey) {
       verifyAdmin(savedKey, judgeId);
@@ -62,7 +64,11 @@ export default function AdminPage() {
   };
 
   const handleCreateJudge = async () => {
-    if (!newJudgeName.trim()) return;
+    if (!newJudgeName.trim() || !newJudgeLogin.trim() || !newJudgePassword) {
+      alert('Veuillez remplir tous les champs');
+      return;
+    }
+    
     setCreatingJudge(true);
     try {
       const res = await fetch('/api/admin/create-judge', {
@@ -70,17 +76,27 @@ export default function AdminPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
           judgeId: localStorage.getItem('judgeId'), 
-          judgeName: newJudgeName 
+          judgeName: newJudgeName,
+          login: newJudgeLogin,
+          password: newJudgePassword
         })
       });
-      if (!res.ok) throw new Error('Erreur création');
+      
+      const result = await res.json();
+      
+      if (!res.ok) throw new Error(result.error || 'Erreur création');
+      
+      alert(`Juge créé avec succès !\nNom: ${result.judge.name}\nIdentifiant: ${result.judge.login}`);
+      
       window.location.reload();
-    } catch (err) {
-      alert('Erreur lors de la création du juge');
+    } catch (err: any) {
+      alert(err.message || 'Erreur lors de la création du juge');
     } finally {
       setCreatingJudge(false);
       setShowCreateJudgeModal(false);
       setNewJudgeName('');
+      setNewJudgeLogin('');
+      setNewJudgePassword('');
     }
   };
 
@@ -257,7 +273,7 @@ export default function AdminPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2"><span className="text-pink-500"></span> Images qui font débat <span className="text-xs text-zinc-500 font-normal ml-auto">Top 10</span></h2>
+          <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2"><span className="text-pink-500">🔥</span> Images qui font débat <span className="text-xs text-zinc-500 font-normal ml-auto">Top 10</span></h2>
           {data.debateImages.length === 0 ? (
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center text-zinc-400">Pas encore assez de données</div>
           ) : (
@@ -279,14 +295,72 @@ export default function AdminPage() {
         </section>
       </main>
 
+      {/* Modal création de juge */}
       {showCreateJudgeModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 max-w-md w-full shadow-2xl">
             <h3 className="text-xl font-bold text-white mb-4">Créer un nouveau juge</h3>
-            <input type="text" value={newJudgeName} onChange={(e) => setNewJudgeName(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleCreateJudge()} placeholder="Nom du juge" className="w-full p-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 mb-4 focus:outline-none focus:border-pink-500 transition-colors" autoFocus />
-            <div className="flex gap-3">
-              <button onClick={() => { setShowCreateJudgeModal(false); setNewJudgeName(''); }} className="flex-1 px-4 py-3 bg-zinc-800 hover:bg-zinc-700 text-white rounded-lg transition-colors font-medium" disabled={creatingJudge}>Annuler</button>
-              <button onClick={handleCreateJudge} className="flex-1 px-4 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium" disabled={creatingJudge || !newJudgeName.trim()}>
+            
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-zinc-400 mb-1">
+                  Nom du juge
+                </label>
+                <input
+                  type="text"
+                  value={newJudgeName}
+                  onChange={(e) => setNewJudgeName(e.target.value)}
+                  placeholder="Ex: Jean Dupont"
+                  className="w-full p-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:border-pink-500 transition-colors"
+                  autoFocus
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-zinc-400 mb-1">
+                  Identifiant (login)
+                </label>
+                <input
+                  type="text"
+                  value={newJudgeLogin}
+                  onChange={(e) => setNewJudgeLogin(e.target.value)}
+                  placeholder="Ex: jean"
+                  className="w-full p-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:border-pink-500 transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-zinc-400 mb-1">
+                  Mot de passe
+                </label>
+                <input
+                  type="password"
+                  value={newJudgePassword}
+                  onChange={(e) => setNewJudgePassword(e.target.value)}
+                  placeholder="••••••••"
+                  className="w-full p-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:border-pink-500 transition-colors"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-3 mt-6">
+              <button
+                onClick={() => {
+                  setShowCreateJudgeModal(false);
+                  setNewJudgeName('');
+                  setNewJudgeLogin('');
+                  setNewJudgePassword('');
+                }}
+                className="flex-1 px-4 py-3 bg-zinc-800 hover:bg-zinc-700 text-white rounded-lg transition-colors font-medium"
+                disabled={creatingJudge}
+              >
+                Annuler
+              </button>
+              <button
+                onClick={handleCreateJudge}
+                className="flex-1 px-4 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+                disabled={creatingJudge || !newJudgeName.trim() || !newJudgeLogin.trim() || !newJudgePassword}
+              >
                 {creatingJudge ? 'Création...' : 'Créer'}
               </button>
             </div>
