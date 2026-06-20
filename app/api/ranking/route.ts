@@ -11,12 +11,11 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
-  // 1. Récupérer les scores du juge, triés par Elo décroissant
+  // 1. Récupérer les scores du juge
   const { data: scores, error: scoresError } = await supabase
     .from('elo_scores')
     .select('image_id, elo, votes, wins, losses')
-    .eq('judge_id', judgeId)
-    .order('elo', { ascending: false });
+    .eq('judge_id', judgeId);
 
   if (scoresError) {
     console.error("Erreur scores:", scoresError);
@@ -40,7 +39,7 @@ export async function GET(request: Request) {
 
   // 3. Combiner les scores et les URLs
   const imagesMap = new Map(images?.map(img => [img.id, img.cloudinary_url]));
-  
+
   const ranking = scores.map(score => ({
     id: score.image_id,
     url: imagesMap.get(score.image_id) || '',
@@ -49,6 +48,23 @@ export async function GET(request: Request) {
     wins: score.wins,
     losses: score.losses
   }));
+
+  // 4. TRI STRICT MULTI-CRITÈRES (plus jamais d'ex-aequo !)
+  ranking.sort((a, b) => {
+    // Critère 1 : Elo décroissant
+    if (b.elo !== a.elo) return b.elo - a.elo;
+    
+    // Critère 2 : Nombre de votes décroissant (plus fiable)
+    if (b.votes !== a.votes) return b.votes - a.votes;
+    
+    // Critère 3 : Ratio victoires/défaites
+    const ratioA = a.votes > 0 ? a.wins / a.votes : 0;
+    const ratioB = b.votes > 0 ? b.wins / b.votes : 0;
+    if (ratioB !== ratioA) return ratioB - ratioA;
+    
+    // Critère 4 : ID d'image (ordre déterministe ultime)
+    return a.id.localeCompare(b.id);
+  });
 
   return NextResponse.json({ ranking });
 }
