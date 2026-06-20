@@ -192,25 +192,28 @@ export default function AdminPage() {
                 </div>
 
                 {/* Graphique votes par jour */}
-                {Object.keys(judge.votesByDay).length > 0 && (
+                {judge.dailyVotes && judge.dailyVotes.length > 0 && (
                   <div className="mb-4">
-                    <div className="text-xs text-zinc-500 mb-2">Votes par jour</div>
-                    <div className="flex items-end gap-1 h-16">
-                      {Object.entries(judge.votesByDay).map(([day, count]: [string, any]) => {
+                    <div className="text-xs text-zinc-500 mb-2">Votes par jour (14 derniers jours)</div>
+                    <div className="flex items-end gap-1 h-16 bg-zinc-800/50 rounded-lg p-2">
+                      {(() => {
                         const maxVotes = Math.max(...judge.dailyVotes.map((d: any) => d.count));
-                        const height = (count / maxVotes) * 100;
-                        return (
-                          <div key={day} className="flex-1 flex flex-col items-center gap-1">
-                            <div 
-                              className="w-full bg-pink-600 rounded-t"
-                              style={{ height: `${Math.max(height, 10)}%` }}
-                            ></div>
-                            <div className="text-[10px] text-zinc-500">
-                              {new Date(day).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}
+                        return judge.dailyVotes.map((day: any, idx: number) => {
+                          const height = maxVotes > 0 ? (day.count / maxVotes) * 100 : 0;
+                          return (
+                            <div key={idx} className="flex-1 flex flex-col items-center gap-1">
+                              <div 
+                                className="w-full bg-pink-600 rounded-t transition-all hover:bg-pink-400"
+                                style={{ height: `${Math.max(height, 5)}%` }}
+                                title={`${day.date}: ${day.count} votes`}
+                              />
+                              <div className="text-[10px] text-zinc-500">
+                                {day.date.slice(8)}
+                              </div>
                             </div>
-                          </div>
-                        );
-                      })}
+                          );
+                        });
+                      })()}
                     </div>
                   </div>
                 )}
@@ -258,8 +261,8 @@ export default function AdminPage() {
                     </span>
                   </div>
                   <div className="aspect-square bg-zinc-800 rounded-lg mb-2 overflow-hidden">
-                    {img.url && (
-                      <img src={img.url} alt="Débat" className="w-full h-full object-cover" />
+                    {img.imageUrl && (
+                      <img src={img.imageUrl} alt="Débat" className="w-full h-full object-cover" />
                     )}
                   </div>
                   <div className="text-xs text-zinc-400">
