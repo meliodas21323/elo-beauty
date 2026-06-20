@@ -11,12 +11,15 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
-  // 1. Récupérer les scores du juge (avec range pour éviter la limite de 1000)
+  // 1. Récupérer les scores du juge avec TRI MULTI-CRITÈRES côté base de données
   const { data: scores, error: scoresError } = await supabase
     .from('elo_scores')
     .select('image_id, elo, votes, wins, losses')
     .eq('judge_id', judgeId)
-    .range(0, 2000);  // ✅ Permet de récupérer jusqu'à 2000 images
+    .range(0, 2000)
+    .order('elo', { ascending: false })        // Critère 1 : Elo décroissant
+    .order('votes', { ascending: false })      // Critère 2 : Votes décroissant
+    .order('image_id', { ascending: true });   // Critère 3 : ID croissant (déterministe)
 
   if (scoresError) {
     console.error("Erreur scores:", scoresError);
@@ -49,23 +52,6 @@ export async function GET(request: Request) {
     wins: score.wins,
     losses: score.losses
   }));
-
-  // 4. TRI STRICT MULTI-CRITÈRES (plus jamais d'ex-aequo !)
-  ranking.sort((a, b) => {
-    // Critère 1 : Elo décroissant
-    if (b.elo !== a.elo) return b.elo - a.elo;
-    
-    // Critère 2 : Nombre de votes décroissant (plus fiable)
-    if (b.votes !== a.votes) return b.votes - a.votes;
-    
-    // Critère 3 : Ratio victoires/défaites
-    const ratioA = a.votes > 0 ? a.wins / a.votes : 0;
-    const ratioB = b.votes > 0 ? b.wins / b.votes : 0;
-    if (ratioB !== ratioA) return ratioB - ratioA;
-    
-    // Critère 4 : ID d'image (ordre déterministe ultime)
-    return a.id.localeCompare(b.id);
-  });
 
   return NextResponse.json({ ranking });
 }
