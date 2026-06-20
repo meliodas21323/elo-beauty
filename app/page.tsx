@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function LoginPage() {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(true);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -29,10 +30,15 @@ export default function LoginPage() {
         return;
       }
 
-      localStorage.setItem('judgeId', data.judge.id);
-      localStorage.setItem('judgeName', data.judge.name);
+      // Stocker selon le choix "Se souvenir de moi"
+      if (rememberMe) {
+        localStorage.setItem('judgeId', data.judge.id);
+        localStorage.setItem('judgeName', data.judge.name);
+      } else {
+        sessionStorage.setItem('judgeId', data.judge.id);
+        sessionStorage.setItem('judgeName', data.judge.name);
+      }
 
-      // Redirection vers la page d'accueil avec streak
       router.push('/accueil');
     } catch (err) {
       setError('Erreur réseau. Vérifie ta connexion.');
@@ -78,6 +84,19 @@ export default function LoginPage() {
               placeholder="••••••••"
               required
             />
+          </div>
+
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="rememberMe"
+              checked={rememberMe}
+              onChange={(e) => setRememberMe(e.target.checked)}
+              className="w-4 h-4 bg-zinc-800 border border-zinc-700 rounded focus:ring-2 focus:ring-pink-500"
+            />
+            <label htmlFor="rememberMe" className="text-sm text-zinc-400">
+              Se souvenir de moi
+            </label>
           </div>
 
           {error && (
