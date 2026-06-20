@@ -59,10 +59,8 @@ export default function AdminPage() {
     );
   }
 
-  // Trouver le juge sélectionné
   const currentJudge = selectedJudge ? data.judgeStats.find((j: any) => j.id === selectedJudge) : null;
 
-  // Si on affiche une image débat
   if (showDebateImage) {
     return (
       <div className="h-dvh bg-black text-white flex flex-col">
@@ -81,7 +79,7 @@ export default function AdminPage() {
         
         <main className="flex-1 flex items-center justify-center p-6">
           <div className="max-w-md w-full">
-            <img src={showDebateImage.url} alt="Image débat" className="w-full rounded-xl mb-4" />
+            <img src={showDebateImage.imageUrl} alt="Image débat" className="w-full rounded-xl mb-4" />
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-2">
               <div className="flex justify-between">
                 <span className="text-zinc-400">ID:</span>
@@ -125,7 +123,6 @@ export default function AdminPage() {
       </header>
 
       <main className="px-4 py-6 space-y-6">
-        {/* Vue d'ensemble */}
         <section>
           <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
             <span className="text-pink-500">📊</span> Vue d'ensemble
@@ -150,7 +147,6 @@ export default function AdminPage() {
           </div>
         </section>
 
-        {/* Activité par juge avec graphiques */}
         <section>
           <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
             <span className="text-pink-500">👥</span> Activité par juge
@@ -236,7 +232,6 @@ export default function AdminPage() {
           </div>
         </section>
 
-        {/* Images débat */}
         <section>
           <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
             <span className="text-pink-500">🔥</span> Images qui font débat
