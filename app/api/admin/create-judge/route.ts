@@ -17,15 +17,33 @@ export async function POST(request: Request) {
 
   const supabase = createServerClient();
 
-  // Vérifier si le login existe déjà
-  const { data: existingJudge } = await supabase
+  const trimmedName = judgeName.trim();
+  const trimmedLogin = login.trim();
+
+  // Vérifier si le nom existe déjà
+  const { data: existingName } = await supabase
     .from('judges')
-    .select('id')
-    .eq('login', login.trim())
+    .select('id, name')
+    .eq('name', trimmedName)
     .single();
 
-  if (existingJudge) {
-    return NextResponse.json({ error: "Cet identifiant existe déjà" }, { status: 409 });
+  if (existingName) {
+    return NextResponse.json({ 
+      error: `Un juge nommé "${trimmedName}" existe déjà` 
+    }, { status: 409 });
+  }
+
+  // Vérifier si le login existe déjà
+  const { data: existingLogin } = await supabase
+    .from('judges')
+    .select('id, login')
+    .eq('login', trimmedLogin)
+    .single();
+
+  if (existingLogin) {
+    return NextResponse.json({ 
+      error: `L'identifiant "${trimmedLogin}" est déjà utilisé` 
+    }, { status: 409 });
   }
 
   // Hacher le mot de passe
@@ -35,8 +53,8 @@ export async function POST(request: Request) {
   const { data, error } = await supabase
     .from('judges')
     .insert({
-      name: judgeName.trim(),
-      login: login.trim(),
+      name: trimmedName,
+      login: trimmedLogin,
       password: hashedPassword,
       created_at: new Date().toISOString()
     })
