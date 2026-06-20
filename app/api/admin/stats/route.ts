@@ -14,9 +14,12 @@ export async function GET(request: Request) {
   const supabase = createServerClient();
 
   const { data: judges } = await supabase.from('judges').select('id, name, created_at').order('created_at', { ascending: true });
-  const { data: images } = await supabase.from('images').select('id, cloudinary_url');
+  
   const { data: scores } = await supabase.from('elo_scores').select('judge_id, image_id, elo, votes, wins, losses');
   const { data: allVotes } = await supabase.from('votes').select('judge_id, winner_id, loser_id, created_at').order('created_at', { ascending: true });
+  
+  // Récupérer TOUTES les images (pas juste 1000)
+  const { data: images, count: imageCount } = await supabase.from('images').select('id, cloudinary_url').range(0, 2000);
 
   if (!judges || !scores) {
     return NextResponse.json({ error: "Erreur de récupération" }, { status: 500 });
@@ -79,7 +82,7 @@ export async function GET(request: Request) {
       imagesVoted: judgeScores.length,
       coherenceRate,
       incoherenceCount,
-      cycles: cycles.slice(0, 10), // Top 10 cycles
+      cycles: cycles.slice(0, 10),
       votesByDay
     };
   });
@@ -115,7 +118,12 @@ export async function GET(request: Request) {
     .slice(0, 10);
 
   return NextResponse.json({
-    overview: { totalJudges: judges.length, totalImages: images?.length || 0, totalDuels: totalGlobalDuels, totalVotes: totalGlobalVotes },
+    overview: { 
+      totalJudges: judges.length, 
+      totalImages: imageCount || images?.length || 0, 
+      totalDuels: totalGlobalDuels, 
+      totalVotes: totalGlobalVotes 
+    },
     judgeStats,
     debateImages: imageDebates
   });
