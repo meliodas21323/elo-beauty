@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase';
 
 export async function GET(request: Request) {
-  console.log('🔥 API PAIR APPELÉE - URL:', request.url);
+  console.log(' API PAIR APPELÉE - URL:', request.url);
   
   const { searchParams } = new URL(request.url);
   const judgeId = searchParams.get('judgeId');
@@ -13,13 +13,19 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
-  // 1. Récupérer TOUTES les images
-  const { data: images } = await supabase
+  // 1. Récupérer TOUTES les images avec PAGINATION (Supabase limite à 1000 par requête)
+  const { data: imagesPage1 } = await supabase
     .from('images')
     .select('id, cloudinary_url')
-    .limit(2000);
+    .range(0, 999);
 
-  console.log('📊 Total images:', images?.length);
+  const { data: imagesPage2 } = await supabase
+    .from('images')
+    .select('id, cloudinary_url')
+    .range(1000, 1999);
+
+  const images = [...(imagesPage1 || []), ...(imagesPage2 || [])];
+  console.log('📊 Total images:', images.length);
 
   // 2. Récupérer les scores du juge
   const { data: scores } = await supabase
@@ -31,8 +37,8 @@ export async function GET(request: Request) {
   console.log('📊 Images déjà votées:', votedImageIds.size);
 
   // 3. SÉPARER les images votées et non votées
-  const nonVotedImages = (images || []).filter(img => !votedImageIds.has(img.id));
-  const votedImages = (images || []).filter(img => votedImageIds.has(img.id));
+  const nonVotedImages = images.filter(img => !votedImageIds.has(img.id));
+  const votedImages = images.filter(img => votedImageIds.has(img.id));
 
   console.log('📊 Images NON votées:', nonVotedImages.length);
   console.log('📊 Images votées:', votedImages.length);
