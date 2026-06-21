@@ -40,11 +40,9 @@ export async function GET(request: Request) {
   // 4. PRIORITÉ ABSOLUE aux images non votées
   let pool = [];
   if (nonVotedImages.length >= 2) {
-    // Prendre uniquement des images non votées
     pool = nonVotedImages;
     console.log('✅ Utilisation des images NON votées');
   } else {
-    // Mélanger votées et non votées
     pool = [...nonVotedImages, ...votedImages];
     console.log('⚠️ Mélange des images');
   }
@@ -58,8 +56,8 @@ export async function GET(request: Request) {
     
     if (image1 && image2) {
       pairs.push({
-        left: { id: image1.id, url: image1.url, elo: 1200 },
-        right: { id: image2.id, url: image2.url, elo: 1200 }
+        left: { id: image1.id, url: image1.cloudinary_url, elo: 1200 },
+        right: { id: image2.id, url: image2.cloudinary_url, elo: 1200 }
       });
     }
   }
