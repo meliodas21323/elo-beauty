@@ -67,5 +67,22 @@ export async function GET(request: Request) {
     });
   }
 
+    // ... (le reste du code reste identique)
+
+  // 🔍 LOG DE DÉBOGAGE
+  console.log('📊 DEBUG PAIR API:');
+  console.log('Total images récupérées:', images?.length || 0);
+  console.log('Total imagesWithVotes:', imagesWithVotes.length);
+  console.log('TopCount (30%):', topCount);
+  console.log('Candidats sélectionnés:', candidates.length);
+  
+  const imagesWithZeroVotes = candidates.filter(img => img.votes === 0);
+  console.log('Images avec 0 vote dans les candidats:', imagesWithZeroVotes.length);
+  
+  if (imagesWithZeroVotes.length > 0) {
+    console.log('Exemples d\'images avec 0 vote:', 
+      imagesWithZeroVotes.slice(0, 3).map(img => img.id));
+  }
+
   return NextResponse.json({ pairs });
 }
