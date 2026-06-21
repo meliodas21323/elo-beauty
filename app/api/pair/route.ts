@@ -1,6 +1,45 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase';
 
+// Fonction générique pour récupérer TOUTES les images (pagination automatique)
+async function fetchAllImages(supabase: any) {
+  const PAGE_SIZE = 1000; // Limite max de Supabase
+  let allImages: any[] = [];
+  let currentPage = 0;
+  let hasMore = true;
+
+  while (hasMore) {
+    const start = currentPage * PAGE_SIZE;
+    const end = start + PAGE_SIZE - 1;
+
+    const { data, error } = await supabase
+      .from('images')
+      .select('id, cloudinary_url')
+      .range(start, end);
+
+    if (error) {
+      console.error(`Erreur page ${currentPage}:`, error);
+      break;
+    }
+
+    if (data && data.length > 0) {
+      allImages = [...allImages, ...data];
+      console.log(`📦 Page ${currentPage + 1}: ${data.length} images récupérées`);
+      
+      // Si on a récupéré moins que PAGE_SIZE, c'est qu'il n'y a plus de pages
+      if (data.length < PAGE_SIZE) {
+        hasMore = false;
+      }
+    } else {
+      hasMore = false;
+    }
+
+    currentPage++;
+  }
+
+  return allImages;
+}
+
 export async function GET(request: Request) {
   console.log(' API PAIR APPELÉE - URL:', request.url);
   
@@ -13,19 +52,9 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
-  // 1. Récupérer TOUTES les images avec PAGINATION (Supabase limite à 1000 par requête)
-  const { data: imagesPage1 } = await supabase
-    .from('images')
-    .select('id, cloudinary_url')
-    .range(0, 999);
-
-  const { data: imagesPage2 } = await supabase
-    .from('images')
-    .select('id, cloudinary_url')
-    .range(1000, 1999);
-
-  const images = [...(imagesPage1 || []), ...(imagesPage2 || [])];
-  console.log('📊 Total images:', images.length);
+  // 1. Récupérer TOUTES les images (pagination automatique)
+  const images = await fetchAllImages(supabase);
+  console.log('📊 Total images récupérées:', images.length);
 
   // 2. Récupérer les scores du juge
   const { data: scores } = await supabase
