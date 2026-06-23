@@ -86,7 +86,7 @@ export async function GET(request: Request) {
 
   // 2. Récupérer TOUTES les scores du juge avec pagination
   const scores = await fetchAllScores(supabase, judgeId);
-  console.log(' Total scores récupérés:', scores.length);
+  console.log('📊 Total scores récupérés:', scores.length);
 
   // 3. Créer une Map des scores
   const scoresMap = new Map<string, { elo: number; votes: number; wins: number; losses: number }>();
@@ -102,7 +102,7 @@ export async function GET(request: Request) {
   }
 
   // 4. Créer la liste complète avec nombre de votes
-  const imagesWithVotes = images.map(img => ({
+  let imagesWithVotes = images.map(img => ({
     id: img.id,
     url: img.cloudinary_url,
     votes: scoresMap.get(img.id)?.votes || 0,
@@ -110,25 +110,28 @@ export async function GET(request: Request) {
   }));
 
   // 5. Exclure les images récemment vues
-  const filteredImages = imagesWithVotes.filter(img => !excludeIds.includes(img.id));
+  imagesWithVotes = imagesWithVotes.filter(img => !excludeIds.includes(img.id));
 
   // 6. TRIER par nombre de votes (CROISSANT = les moins votées en premier)
-  filteredImages.sort((a, b) => a.votes - b.votes);
+  imagesWithVotes.sort((a, b) => a.votes - b.votes);
 
-  // 7. Prendre les 20 images les moins votées pour former la file d'attente
-  const QUEUE_SIZE = 20;
-  const queue = filteredImages.slice(0, QUEUE_SIZE);
+  // 7. Prendre un POOL LARGE (50 images) pour avoir de la variété
+  const POOL_SIZE = 50;
+  const pool = imagesWithVotes.slice(0, POOL_SIZE);
 
-  console.log('📊 File d\'attente:', queue.length, 'images');
-  console.log(' Votes min/max dans la file:', queue[0]?.votes, '-', queue[queue.length - 1]?.votes);
+  // 8. MÉLANGER le pool pour éviter les mêmes paires
+  pool.sort(() => 0.5 - Math.random());
 
-  // 8. Créer les paires dans l'ordre (pas aléatoire)
+  console.log('📊 Pool:', pool.length, 'images (50 moins votées, mélangées)');
+  console.log('📊 Votes min/max dans le pool:', pool[0]?.votes, '-', pool[pool.length - 1]?.votes);
+
+  // 9. Créer les paires à partir du pool mélangé
   const pairs = [];
-  for (let i = 0; i < Math.floor(queue.length / 2); i++) {
-    const image1 = queue[i * 2];
-    const image2 = queue[i * 2 + 1];
+  for (let i = 0; i < Math.floor(pool.length / 2); i++) {
+    const image1 = pool[i * 2];
+    const image2 = pool[i * 2 + 1];
     
-    if (image1 && image2) {
+    if (image1 && image2 && image1.id !== image2.id) {
       pairs.push({
         left: { id: image1.id, url: image1.url, elo: image1.elo },
         right: { id: image2.id, url: image2.url, elo: image2.elo }
@@ -138,7 +141,7 @@ export async function GET(request: Request) {
 
   console.log('✅ Paires générées:', pairs.length);
   if (pairs.length > 0) {
-    console.log('🎯 Première paire:', pairs[0].left.id, `(v:${pairs[0].left.elo})`, 'vs', pairs[0].right.id);
+    console.log('🎯 Première paire:', pairs[0].left.id, `(v:${scoresMap.get(pairs[0].left.id)?.votes || 0})`, 'vs', pairs[0].right.id);
   }
 
   return NextResponse.json({ pairs });

@@ -17,12 +17,11 @@ export default function VotePage() {
   const [showFlash, setShowFlash] = useState(false);
   const [particles, setParticles] = useState<any[]>([]);
   
-  // États pour le bouton Annuler
   const [lastVote, setLastVote] = useState<{ winnerId: string; loserId: string; timestamp: number } | null>(null);
   const [undoTimeLeft, setUndoTimeLeft] = useState(0);
 
   const pairQueueRef = useRef<any[]>([]);
-  const recentlySeenRef = useRef<string[]>([]);
+  const recentlySeenRef = useRef<string[]>([]); // 🔥 Exclusion stricte
   const isFetchingRef = useRef(false);
 
   useEffect(() => {
@@ -34,7 +33,6 @@ export default function VotePage() {
     setShowElo(saved === 'true');
   }, [router]);
 
-  // Timer pour le bouton Annuler (10 secondes)
   useEffect(() => {
     if (undoTimeLeft > 0) {
       const timer = setTimeout(() => setUndoTimeLeft(undoTimeLeft - 1), 1000);
@@ -52,11 +50,14 @@ export default function VotePage() {
   const fetchPairs = async () => {
     if (!judgeId) return [];
     try {
+      // 🔥 Exclure TOUTES les images récemment vues (20 dernières)
       const excludeIds = recentlySeenRef.current.join(',');
+      console.log('🔄 Fetch pairs - excludeIds:', recentlySeenRef.current.length, 'images');
+      
       const res = await fetch(`/api/pair?judgeId=${judgeId}&excludeIds=${excludeIds}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      console.log('📦 Paires reçues:', data.pairs.length);
+      console.log(' Paires reçues:', data.pairs.length);
       return data.pairs;
     } catch (err: any) {
       throw new Error(err.message || 'Erreur de chargement');
@@ -134,14 +135,16 @@ export default function VotePage() {
       setRightImage(nextPair.right);
       pairQueueRef.current = pairQueueRef.current.slice(1);
       
+      // 🔥 Ajouter à la liste des images vues (garder les 20 dernières)
       recentlySeenRef.current.push(nextPair.left.id, nextPair.right.id);
-      if (recentlySeenRef.current.length > 4) {
-        recentlySeenRef.current = recentlySeenRef.current.slice(-4);
+      if (recentlySeenRef.current.length > 20) {
+        recentlySeenRef.current = recentlySeenRef.current.slice(-20);
       }
 
-      // 🔥 Recharger quand la file est à moitié vide (moins de 5 paires restantes)
-      if (pairQueueRef.current.length < 5 && !isFetchingRef.current) {
+      // 🔥 Recharger quand la file est à moitié vide (moins de 10 paires restantes)
+      if (pairQueueRef.current.length < 10 && !isFetchingRef.current) {
         isFetchingRef.current = true;
+        console.log('🔄 Rechargement - file à', pairQueueRef.current.length, 'paires');
         fetchPairs().then(pairs => {
           pairQueueRef.current = [...pairQueueRef.current, ...pairs];
           preloadPairsProgressively(pairs);
