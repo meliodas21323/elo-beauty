@@ -40,7 +40,7 @@ export default function VotePage() {
       const timer = setTimeout(() => setUndoTimeLeft(undoTimeLeft - 1), 1000);
       return () => clearTimeout(timer);
     } else if (undoTimeLeft === 0 && lastVote) {
-      setLastVote(null); // Cache le bouton après 10s
+      setLastVote(null);
     }
   }, [undoTimeLeft, lastVote]);
 
@@ -56,6 +56,7 @@ export default function VotePage() {
       const res = await fetch(`/api/pair?judgeId=${judgeId}&excludeIds=${excludeIds}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
+      console.log('📦 Paires reçues:', data.pairs.length);
       return data.pairs;
     } catch (err: any) {
       throw new Error(err.message || 'Erreur de chargement');
@@ -138,7 +139,8 @@ export default function VotePage() {
         recentlySeenRef.current = recentlySeenRef.current.slice(-4);
       }
 
-      if (pairQueueRef.current.length < 3 && !isFetchingRef.current) {
+      // 🔥 Recharger quand la file est à moitié vide (moins de 5 paires restantes)
+      if (pairQueueRef.current.length < 5 && !isFetchingRef.current) {
         isFetchingRef.current = true;
         fetchPairs().then(pairs => {
           pairQueueRef.current = [...pairQueueRef.current, ...pairs];
@@ -169,9 +171,8 @@ export default function VotePage() {
       advanceQueue();
     }, 400);
 
-    // Enregistrer le vote pour permettre l'annulation
     setLastVote({ winnerId, loserId, timestamp: Date.now() });
-    setUndoTimeLeft(10); // 10 secondes pour annuler
+    setUndoTimeLeft(10);
 
     fetch('/api/vote', {
       method: 'POST',
@@ -185,7 +186,7 @@ export default function VotePage() {
     setError('');
     
     setAnimatingImage('left');
-    setLastVote(null); // Pas d'annulation pour un skip
+    setLastVote(null);
     
     setTimeout(() => {
       setAnimatingImage(null);
@@ -197,7 +198,6 @@ export default function VotePage() {
     if (!lastVote || !judgeId) return;
     setError('');
     
-    // Appel à l'API pour annuler le vote
     const res = await fetch('/api/undo-vote', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -207,7 +207,6 @@ export default function VotePage() {
     if (res.ok) {
       setLastVote(null);
       setUndoTimeLeft(0);
-      // Optionnel : on pourrait recharger la paire actuelle, mais on laisse l'utilisateur continuer
     } else {
       setError("Impossible d'annuler ce vote.");
     }
@@ -293,7 +292,6 @@ export default function VotePage() {
         </div>
       </main>
 
-      {/* Bouton Passer */}
       <div className="flex-shrink-0 py-2 flex justify-center bg-black relative z-10">
         <button
           onClick={handleSkip}
@@ -307,7 +305,6 @@ export default function VotePage() {
         </button>
       </div>
 
-      {/* Bouton Annuler (Flottant) */}
       {lastVote && (
         <button
           onClick={handleUndo}
