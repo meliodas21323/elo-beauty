@@ -21,7 +21,7 @@ export default function VotePage() {
   const [undoTimeLeft, setUndoTimeLeft] = useState(0);
 
   const pairQueueRef = useRef<any[]>([]);
-  const recentlySeenRef = useRef<string[]>([]); // 🔥 Exclusion stricte
+  const recentlySeenRef = useRef<string[]>([]);
   const isFetchingRef = useRef(false);
 
   useEffect(() => {
@@ -50,14 +50,13 @@ export default function VotePage() {
   const fetchPairs = async () => {
     if (!judgeId) return [];
     try {
-      // 🔥 Exclure TOUTES les images récemment vues (20 dernières)
       const excludeIds = recentlySeenRef.current.join(',');
       console.log('🔄 Fetch pairs - excludeIds:', recentlySeenRef.current.length, 'images');
       
       const res = await fetch(`/api/pair?judgeId=${judgeId}&excludeIds=${excludeIds}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      console.log(' Paires reçues:', data.pairs.length);
+      console.log('📦 Paires reçues:', data.pairs.length);
       return data.pairs;
     } catch (err: any) {
       throw new Error(err.message || 'Erreur de chargement');
@@ -135,13 +134,11 @@ export default function VotePage() {
       setRightImage(nextPair.right);
       pairQueueRef.current = pairQueueRef.current.slice(1);
       
-      // 🔥 Ajouter à la liste des images vues (garder les 20 dernières)
       recentlySeenRef.current.push(nextPair.left.id, nextPair.right.id);
       if (recentlySeenRef.current.length > 20) {
         recentlySeenRef.current = recentlySeenRef.current.slice(-20);
       }
 
-      // 🔥 Recharger quand la file est à moitié vide (moins de 10 paires restantes)
       if (pairQueueRef.current.length < 10 && !isFetchingRef.current) {
         isFetchingRef.current = true;
         console.log('🔄 Rechargement - file à', pairQueueRef.current.length, 'paires');
@@ -237,6 +234,7 @@ export default function VotePage() {
         </div>
       </header>
 
+      {/* ✅ Images inchangées */}
       <main className="flex-1 px-3 pb-2 flex flex-col justify-end overflow-hidden min-h-0 relative">
         {error && (
           <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">{error}</div>
@@ -295,35 +293,38 @@ export default function VotePage() {
         </div>
       </main>
 
-      <div className="flex-shrink-0 py-2 flex justify-center bg-black relative z-10">
+      {/* ✅ Bouton Passer agrandi */}
+      <div className="flex-shrink-0 py-3 flex justify-center bg-black relative z-10">
         <button
           onClick={handleSkip}
           disabled={!!animatingImage}
-          className="px-6 py-2.5 bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 font-medium rounded-full transition-all text-sm flex items-center gap-2 border border-zinc-700 disabled:opacity-50"
+          className="px-10 py-3.5 bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 font-semibold rounded-full transition-all text-base flex items-center gap-2 border border-zinc-700 disabled:opacity-50"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
           </svg>
           Passer ce duel
         </button>
       </div>
 
+      {/* ✅ Bouton Annuler agrandi */}
       {lastVote && (
         <button
           onClick={handleUndo}
-          className="absolute bottom-24 right-4 z-50 bg-zinc-800/90 backdrop-blur-sm border border-zinc-600 text-white px-4 py-2 rounded-full shadow-lg active:scale-95 transition-all flex items-center gap-2 text-sm font-medium"
+          className="absolute bottom-32 right-4 z-50 bg-zinc-800/90 backdrop-blur-sm border border-zinc-600 text-white px-6 py-3 rounded-full shadow-lg active:scale-95 transition-all flex items-center gap-2 text-base font-semibold"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
           </svg>
           Annuler ({undoTimeLeft}s)
         </button>
       )}
 
-      <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-3 relative z-10" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
-        <div className="grid grid-cols-2 gap-3">
-          <button onClick={() => router.push('/classement')} className="p-4 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg transition-colors text-base">Classement</button>
-          <button className="p-4 bg-pink-700 text-white font-bold rounded-lg text-base">Voter</button>
+      {/* ✅ Boutons de navigation agrandis */}
+      <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-4 relative z-10" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
+        <div className="grid grid-cols-2 gap-4">
+          <button onClick={() => router.push('/classement')} className="p-5 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold rounded-lg transition-colors text-lg">Classement</button>
+          <button className="p-5 bg-pink-700 text-white font-bold rounded-lg text-lg">Voter</button>
         </div>
       </nav>
     </div>
