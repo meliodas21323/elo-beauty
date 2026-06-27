@@ -23,6 +23,7 @@ export default function VotePage() {
   const pairQueueRef = useRef<any[]>([]);
   const recentlySeenRef = useRef<string[]>([]);
   const isFetchingRef = useRef(false);
+  const lastPairRef = useRef<{ left: any; right: any } | null>(null); // 🔥 Nouvelle ref pour stocker la dernière paire
 
   useEffect(() => {
     const id = localStorage.getItem('judgeId');
@@ -90,6 +91,7 @@ export default function VotePage() {
         if (pairs.length > 0) {
           setLeftImage(pairs[0].left);
           setRightImage(pairs[0].right);
+          lastPairRef.current = { left: pairs[0].left, right: pairs[0].right }; // 🔥 Stocker la paire
           pairQueueRef.current = pairs.slice(1);
           recentlySeenRef.current.push(pairs[0].left.id, pairs[0].right.id);
         }
@@ -132,6 +134,7 @@ export default function VotePage() {
       const nextPair = pairQueueRef.current[0];
       setLeftImage(nextPair.left);
       setRightImage(nextPair.right);
+      lastPairRef.current = { left: nextPair.left, right: nextPair.right }; //  Stocker la paire
       pairQueueRef.current = pairQueueRef.current.slice(1);
       
       recentlySeenRef.current.push(nextPair.left.id, nextPair.right.id);
@@ -195,9 +198,10 @@ export default function VotePage() {
   };
 
   const handleUndo = async () => {
-    if (!lastVote || !judgeId) return;
+    if (!lastVote || !judgeId || !lastPairRef.current) return;
     setError('');
     
+    // 1. Appel à l'API pour annuler le vote côté backend
     const res = await fetch('/api/undo-vote', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -205,8 +209,26 @@ export default function VotePage() {
     });
 
     if (res.ok) {
+      // 2. Remettre la paire annulée au DÉBUT de la file d'attente
+      pairQueueRef.current = [
+        { left: lastPairRef.current.left, right: lastPairRef.current.right },
+        ...pairQueueRef.current
+      ];
+
+      // 3. Revenir visuellement sur cette paire
+      setLeftImage(lastPairRef.current.left);
+      setRightImage(lastPairRef.current.right);
+
+      // 4. Retirer ces images de la liste "récemment vues" pour qu'elles puissent réapparaître
+      recentlySeenRef.current = recentlySeenRef.current.filter(
+        id => id !== lastPairRef.current!.left.id && id !== lastPairRef.current!.right.id
+      );
+
+      // 5. Reset des états
       setLastVote(null);
       setUndoTimeLeft(0);
+
+      console.log('↩️ Vote annulé - retour au duel:', lastPairRef.current.left.id, 'vs', lastPairRef.current.right.id);
     } else {
       setError("Impossible d'annuler ce vote.");
     }
@@ -234,7 +256,6 @@ export default function VotePage() {
         </div>
       </header>
 
-      {/* ✅ Images inchangées */}
       <main className="flex-1 px-3 pb-2 flex flex-col justify-end overflow-hidden min-h-0 relative">
         {error && (
           <div className="mb-3 p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm text-center">{error}</div>
@@ -293,7 +314,6 @@ export default function VotePage() {
         </div>
       </main>
 
-      {/* ✅ Bouton Passer agrandi */}
       <div className="flex-shrink-0 py-3 flex justify-center bg-black relative z-10">
         <button
           onClick={handleSkip}
@@ -307,7 +327,6 @@ export default function VotePage() {
         </button>
       </div>
 
-      {/* ✅ Bouton Annuler agrandi */}
       {lastVote && (
         <button
           onClick={handleUndo}
@@ -320,7 +339,6 @@ export default function VotePage() {
         </button>
       )}
 
-      {/* ✅ Boutons de navigation agrandis */}
       <nav className="flex-shrink-0 bg-black border-t border-zinc-800 px-4 py-4 relative z-10" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
         <div className="grid grid-cols-2 gap-4">
           <button onClick={() => router.push('/classement')} className="p-5 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold rounded-lg transition-colors text-lg">Classement</button>
