@@ -11,20 +11,17 @@ export default function AdminPage() {
   const [error, setError] = useState('');
   const [data, setData] = useState<any>(null);
   const [showDebateImage, setShowDebateImage] = useState<any>(null);
-  
-  // États pour le mot de passe admin
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [adminPassword, setAdminPassword] = useState('');
   const [loginError, setLoginError] = useState('');
 
-  // États pour la création de juge
   const [showCreateJudgeModal, setShowCreateJudgeModal] = useState(false);
   const [newJudgeName, setNewJudgeName] = useState('');
   const [newJudgeLogin, setNewJudgeLogin] = useState('');
   const [newJudgePassword, setNewJudgePassword] = useState('');
   const [creatingJudge, setCreatingJudge] = useState(false);
 
-  // Vérification initiale
   useEffect(() => {
     const judgeId = localStorage.getItem('judgeId');
     if (!judgeId || judgeId !== ADMIN_UUID) {
@@ -43,9 +40,12 @@ export default function AdminPage() {
     setLoading(true);
     setLoginError('');
     try {
-      const res = await fetch(`/api/admin/stats?adminKey=${encodeURIComponent(key)}&judgeId=${judgeId}`);
+      const res = await fetch(`/api/admin/stats?adminKey=${encodeURIComponent(key)}&judgeId=${judgeId}`, {
+        cache: 'no-store' // 🔥 Force le rafraîchissement depuis le serveur
+      });
       if (!res.ok) throw new Error('Mot de passe incorrect');
       const json = await res.json();
+      console.log('📊 Données reçues:', json.overview.totalJudges, 'juges');
       setData(json);
       setIsAuthenticated(true);
       sessionStorage.setItem('adminKey', key);
@@ -68,26 +68,26 @@ export default function AdminPage() {
       alert('Veuillez remplir tous les champs');
       return;
     }
-    
+
     setCreatingJudge(true);
     try {
       const res = await fetch('/api/admin/create-judge', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          judgeId: localStorage.getItem('judgeId'), 
+        body: JSON.stringify({
+          judgeId: localStorage.getItem('judgeId'),
           judgeName: newJudgeName,
           login: newJudgeLogin,
           password: newJudgePassword
         })
       });
-      
+
       const result = await res.json();
-      
+
       if (!res.ok) throw new Error(result.error || 'Erreur création');
-      
+
       alert(`Juge créé avec succès !\nNom: ${result.judge.name}\nIdentifiant: ${result.judge.login}`);
-      
+
       window.location.reload();
     } catch (err: any) {
       alert(err.message || 'Erreur lors de la création du juge');
@@ -100,7 +100,6 @@ export default function AdminPage() {
     }
   };
 
-  // Écran de connexion par mot de passe
   if (!loading && !isAuthenticated) {
     return (
       <div className="h-dvh bg-black text-white flex items-center justify-center p-6">
@@ -257,7 +256,7 @@ export default function AdminPage() {
 
                 {judge.cycles && judge.cycles.length > 0 && (
                   <div className="border-t border-zinc-800 pt-3">
-                    <div className="text-xs text-red-400 font-bold mb-2">️ Cycles détectés ({judge.cycles.length})</div>
+                    <div className="text-xs text-red-400 font-bold mb-2">⚠️ Cycles détectés ({judge.cycles.length})</div>
                     <div className="space-y-1 max-h-32 overflow-y-auto">
                       {judge.cycles.map((cycle: any, idx: number) => (
                         <div key={idx} className="text-xs text-zinc-400 bg-zinc-800/50 p-2 rounded">
@@ -295,17 +294,14 @@ export default function AdminPage() {
         </section>
       </main>
 
-      {/* Modal création de juge */}
       {showCreateJudgeModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 max-w-md w-full shadow-2xl">
             <h3 className="text-xl font-bold text-white mb-4">Créer un nouveau juge</h3>
-            
+
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-zinc-400 mb-1">
-                  Nom du juge
-                </label>
+                <label className="block text-sm font-medium text-zinc-400 mb-1">Nom du juge</label>
                 <input
                   type="text"
                   value={newJudgeName}
@@ -317,9 +313,7 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-zinc-400 mb-1">
-                  Identifiant (login)
-                </label>
+                <label className="block text-sm font-medium text-zinc-400 mb-1">Identifiant (login)</label>
                 <input
                   type="text"
                   value={newJudgeLogin}
@@ -330,9 +324,7 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-zinc-400 mb-1">
-                  Mot de passe
-                </label>
+                <label className="block text-sm font-medium text-zinc-400 mb-1">Mot de passe</label>
                 <input
                   type="password"
                   value={newJudgePassword}

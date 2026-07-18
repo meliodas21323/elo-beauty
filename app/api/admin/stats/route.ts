@@ -51,8 +51,8 @@ export async function GET(request: Request) {
 
   const supabase = createServerClient();
 
-  // 1. Récupérer TOUTES les données avec pagination
-  const judges = await fetchAll(supabase, 'judges', 'id, name, created_at, login', { column: 'created_at', ascending: true });
+  // 1. Récupérer TOUTES les données avec pagination (plus de limite de 1000)
+  const judges = await fetchAll(supabase, 'judges', 'id, name, login, created_at', { column: 'created_at', ascending: true });
   const scores = await fetchAll(supabase, 'elo_scores', 'judge_id, image_id, elo, votes, wins, losses');
   const allVotes = await fetchAll(supabase, 'votes', 'judge_id, winner_id, loser_id, created_at', { column: 'created_at', ascending: true });
   
@@ -61,6 +61,8 @@ export async function GET(request: Request) {
   if (!judges || !scores) {
     return NextResponse.json({ error: "Erreur de récupération" }, { status: 500 });
   }
+
+  console.log('📊 Admin Stats: Juges trouvés:', judges.length);
 
   const imageMap = new Map<string, string>();
   images?.forEach(img => imageMap.set(img.id, img.cloudinary_url));
@@ -75,7 +77,7 @@ export async function GET(request: Request) {
     let totalComparisons = 0;
     const cycles: any[] = [];
 
-    // Optimisation : on limite la vérification des cycles pour éviter de freezer le serveur
+    // Optimisation : on limite la vérification des cycles aux 500 derniers votes pour éviter de freezer le serveur
     const recentVotes = judgeVotes.slice(-500); 
     
     for (let i = 0; i < recentVotes.length; i++) {
@@ -110,7 +112,7 @@ export async function GET(request: Request) {
     return {
       id: judge.id, 
       name: judge.name, 
-      login: judge.login, // Ajouté pour debug
+      login: judge.login,
       created_at: judge.created_at,
       totalVotes, 
       totalDuels, 
@@ -147,8 +149,13 @@ export async function GET(request: Request) {
     .sort((a, b) => b.stdDev - a.stdDev)
     .slice(0, 10);
 
+  // 🔥 FORCER LE NO-CACHE pour que le téléphone affiche toujours les données à jour
   return NextResponse.json({
     overview: { totalJudges: judges.length, totalImages: imageCount || 0, totalDuels: totalGlobalDuels, totalVotes: totalGlobalVotes },
     judgeStats, debateImages: imageDebates
+  }, {
+    headers: {
+      'Cache-Control': 'no-store, max-age=0, must-revalidate'
+    }
   });
 }
